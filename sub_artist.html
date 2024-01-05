@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>D0:SCENT</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./images/favicon_2.png" type="image/x-icon">
+    <!-- intel one mono font -->
+    <link rel="stylesheet" href="./css/font_intel_one_mono.css">
+    <!-- pretendard font -->
+    <link rel="stylesheet" href="./css/font_pretendard.css">
+    <!-- artist main,history Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- about us typing Link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--aos 애니메이션 효과 CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 페이지 arrow library -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/sub_artist.css">
+</head>
+
+<body>
+    <!-- top_흘러가는 글씨 -->
+    <div id="flow" class="flow_textbox">
+        <!--화면 밖에 나가는 것은 안보이게 만들 용도-->
+        <div class="text_wrapper">
+            <div class="slide_top">
+                <a href="#">신규 가입 고객 10% 할인쿠폰 및 무료배송 쿠폰 증정 _</a>
+                <a href="#">5만원 이상 구매시 사은품 증정 및 무료배송 _</a>
+                <a href="#">카카오톡 플러스친구 추가시 추가할인쿠폰 증정 _</a>
+                <a href="#">신규 가입 고객 10% 할인쿠폰 및 무료배송 쿠폰 증정 _</a>
+                <a href="#">5만원 이상 구매시 사은품 증정 및 무료배송 _</a>
+                <a href="#">카카오톡 플러스친구 추가시 추가할인쿠폰 증정 _</a>
+            </div><!--slide-->
+            <div class="slide_top">
+                <a href="#">신규 가입 고객 10% 할인쿠폰 및 무료배송 쿠폰 증정 _</a>
+                <a href="#">5만원 이상 구매시 사은품 증정 및 무료배송 _</a>
+                <a href="#">카카오톡 플러스친구 추가시 추가할인쿠폰 증정 _</a>
+                <a href="#">신규 가입 고객 10% 할인쿠폰 및 무료배송 쿠폰 증정 _</a>
+                <a href="#">5만원 이상 구매시 사은품 증정 및 무료배송 _</a>
+                <a href="#">카카오톡 플러스친구 추가시 추가할인쿠폰 증정 _</a>
+            </div><!--slide-->
+        </div><!--text_wrapper-->
+    </div><!--flow_textbox-->
+    <!-- gnb, logo -->
+    <div id="gnb">
+
+        <!-- fixed answer, arrow -->
+        <div class="fixed_left">
+            <a href="./index.html"><img src="./images/menu_logo.jpg" alt="logo "></a>
+        </div><!--fixed close-->
+
+        <div class="fixed_bottom">
+            <a href="#">
+                <img src="./images/fixed_answer.png" alt="fixed"></a>
+            <a href="#"><img src="./images/fixed_arrow.png" alt="fixed"></a>
+            <!-- hover -->
+            <a href="#">
+                <img src="./images/fixed_hover_answer.png" alt="fixed_hover"></a>
+            <a href="#flow"><img src="./images/fixed_hover_arrow.png" alt="fixed_hover"></a>
+        </div><!--fixed_bottom-->
+        <div class="fixed_right">
+            <ul>
+                <li><a href="#"><img src="./images/btn_join.png" alt="btn_join"></a></li>
+                <li><a href="#"><img src="./images/btn_cart.png" alt="btn_cart"></a></li>
+                <li><a href="#"><img src="./images/btn_heart.png" alt="btn_heart"></a></li>
+                <li><a href="#"><img src="./images/btn_hover_login.png" alt="btn_join"></a></li>
+                <li><a href="#"><img src="./images/btn_hover_cart.png" alt="btn_cart"></a></li>
+                <li><a href="#"><img src="./images/btn_hover_heart.png" alt="btn_heart"></a></li>
+            </ul>
+        </div><!--fixed_right-->
+    </div><!--gnb-->
+
+    <!-- 햄버거 버튼 -->
+    <!--여기부터 필요구조 시작-->
+    <div class="hb">
+        <div class="slide-open" id="slide-open">
+            <span class="burgur" id="burgur">
+                <span class="top-line"></span>
+                <span class="bot-line"></span>
+            </span>
+        </div><!--slide-open-->
+        <div class="slide_hb" id="slide_hb">
+
+            <div class="navi_inner">
+
+                <!--탭 콘텐츠 영역(tabs를 눌렀을때 변화할 내용들이 들어있는 곳) 모든 tab내용은, 각각 다른아이디를 갖고 있어야 하고, 같은 tab-content라는 클래스를 가지고 있어야 합니다.-->
+
+
+                <ul class="navi_tabs">
+                    <li>
+                        <div zzz="#navi1">ABOUT US</div>
+                    </li>
+                    <li>
+                        <div zzz="#navi2">ARTIST</div>
+                    </li>
+                    <li>
+                        <div zzz="#navi3">SHOP</div>
+                    </li>
+                    <li>
+                        <div zzz="#navi4">NOTICE</div>
+                    </li>
+
+                </ul>
+                <div class="navi_container" data-aos="zoom-in-right">
+
+                    <div id="navi1" class="navi_tab">
+                        <!--Content-->
+                        <ul>
+                            <li>
+                                <div><a href="./sub_about_us.html">VALUE</a></div>
+                            <li>
+                                <div><a href="./sub_identity.html">IDENTITY</a></div>
+                        </ul>
+                    </div>
+
+                    <div id="navi2" class="navi_tab">
+                        <ul>
+                            <li>
+                                <div><a href="./sub_artist.html">ARCHIVE SHILHUM</a></div>
+                            <li>
+                                <div><a href="./sub_artist.html">BEAK JI HYE</a></div>
+                            <li>
+                                <div><a href="./sub_artist.html">BECKY</a></div>
+                            <li>
+                                <div><a href="./sub_artist.html">SONG H.</a></div>
+                            <li>
+                                <div><a href="./sub_artist.html">YOONSEUL</a></div>
+
+                        </ul>
+                    </div>
+                    <div id="navi3" class="navi_tab">
+                        <ul>
+                            <li>
+                                <div><a href="./sub_shop.html">ALL</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">ACC</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">CLOTHES</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">DRAWING</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">GOODS</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">LIGHTING</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">MUSIC</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">OBJECTS</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">ETCS</a></div>
+                        </ul>
+                    </div>
+                    <div id="navi4" class="navi_tab">
+                        <ul>
+                            <li>
+                                <div><a href="./sub_notice.html">NOTICE</a></div>
+                            <li>
+                                <div><a href="./sub_notice.html#ct">EVENT</a></div>
+                            <li>
+                                <div><a href="./sub_notice.html#ct">CONTACT US</a></div>
+                            <li>
+                                <div><a href="./sub_notice.html#help">HELP</a></div>
+                            <li>
+                                <div><a href="./sub_notice.html#way">WAY TO COME</a></div>
+                        </ul>
+                    </div>
+
+                </div><!--navi container-->
+            </div><!--navi_inner-->
+        </div><!--slide-->
+    </div>
+    <!-- 필요구조 끝-->
+
+
+    </div><!--artist_tab-->
+    <div id="container">
+        <div id="artist_tab" data-aos="zoom-out-right">
+            <h1>ARTIST LIST</h1>
+            <ul>
+                <li class="underline"><a href="#">ARCHIVE SHILHUM</a><span> →</span></li>
+                <li class="underline"><a href="#">BAEK JI HYE</a></li>
+                <li class="underline"><a href="#">BECKY</a></li>
+                <li class="underline"><a href="#">SONG H.</a></li>
+                <li class="underline"><a href="#">YOONSEUL</a></li>
+            </ul>
+        </div><!--artist_tab-->
+        <div class="ct_box">
+            <div class="ct_inner">
+                <ul>
+                    <li>
+                        <h1 data-aos="fade-right">ARCHIVE_SHILHUM</h1>
+                    </li>
+                    <li></li>
+                </ul>
+                <ul>
+                    <li>
+                        <p data-aos="fade-right" data-aos-delay="50">트렌드에 맞는 디자인을 하는 것은 충분히 가치있고 멋진
+                            과정이지만,<br> 우리의 내면에서 꺼내어온 과거의 이미지는 우리가
+                            살아있는 한<br>고갈되지 않는 새로운 매력으로 작용하고 차별성과 귀결됩니다.</p>
+                        <p data-aos="fade-right" data-aos-delay="100">우리의 지극히 주관적인 과거의 이미지를 해체와 편집을 통해<br>
+                            디자인의 언어로 재구성하는 것에 의의를 두고자 합니다.</p>
+                        <p data-aos="fade-right" data-aos-delay="150">이는 우리가 살아온, 혹은 앞으로 겪게 될 장면들을<br>
+                            디자인으로써 기록하기 위함이며,<br>우리가 세상에 존재하지 않게 되더라도<br>
+                            기록물로서 연상되어 기억되기를 희망합니다.</p>
+                    </li>
+                    <li> <!-- Swiper -->
+                        <div class="swiper main_banner_img" data-aos="fade-left">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./images/artist_main_1.jpg" alt="artist1"></div>
+                                <div class="swiper-slide"><img src="./images/artist_main_3.jpg" alt="artist3"></div>
+                                <div class="swiper-slide"><img src="./images/artist_main_7.jpg" alt="artist7"></div>
+                                <div class="swiper-slide"><img src="./images/artist_main_4.jpg" alt="artist4"></div>
+                                <div class="swiper-slide"><img src="./images/artist_main_5.jpg" alt="artist5"></div>
+                                <div class="swiper-slide"><img src="./images/artist_main_6.jpg" alt="artist6"></div>
+                                <div class="swiper-slide"><img src="./images/artist_main_2.jpg" alt="artist2"></div>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li></li>
+                    <li class="underline"><a
+                            href="https://www.instagram.com/archive_silhum/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==">instagram
+                            @archive_shilhum <span>↗</span></a></li>
+                </ul>
+            </div><!--ct_inner-->
+        </div>
+
+    </div><!--container-->
+
+    <!-- animation -->
+    <div class="flow_archive_shilhum">
+        <!--화면 밖에 나가는 것은 안보이게 만들 용도-->
+        <div class="text_wrapper_as">
+            <div class="slide_as">
+                <p><img src="./images/artist_flow_1.png" alt="flow1"></p>
+                <h3 class="stroke">ARCHIVE_SHILHUM</h3>
+                <p><img src="./images/artist_flow_2.png" alt="flow2"></p>
+                <h3>ARCHIVE_SHILHUM</h3>
+                <p><img src="./images/artist_flow_1.png" alt="flow1"></p>
+                <h3 class="stroke">ARCHIVE_SHILHUM</h3>
+                <p><img src="./images/artist_flow_2.png" alt="flow2"></p>
+                <h3>ARCHIVE_SHILHUM</h3>
+            </div><!--slide-->
+            <div class="slide_as">
+                <p><img src="./images/artist_flow_1.png" alt="flow1"></p>
+                <h3 class="stroke">ARCHIVE_SHILHUM</h3>
+                <p><img src="./images/artist_flow_2.png" alt="flow2"></p>
+                <h3>ARCHIVE_SHILHUM</h3>
+                <p><img src="./images/artist_flow_1.png" alt="flow1"></p>
+                <h3 class="stroke">ARCHIVE_SHILHUM</h3>
+                <p><img src="./images/artist_flow_2.png" alt="flow2"></p>
+                <h3>ARCHIVE_SHILHUM</h3>
+            </div><!--slide-->
+        </div><!--text_wrapper-->
+    </div><!--flow_textbox-->
+    <!-- animation -->
+    <div class="flow_archive_shilhum">
+        <!--화면 밖에 나가는 것은 안보이게 만들 용도-->
+        <div class="text_wrapper_as_2">
+            <div class="slide_as_2">
+                <p><img src="./images/artist_flow_1.png" alt="flow1"></p>
+                <h3 class="stroke">ARCHIVE_SHILHUM</h3>
+                <p><img src="./images/artist_flow_2.png" alt="flow2"></p>
+                <h3>ARCHIVE_SHILHUM</h3>
+                <p><img src="./images/artist_flow_1.png" alt="flow1"></p>
+                <h3 class="stroke">ARCHIVE_SHILHUM</h3>
+                <p><img src="./images/artist_flow_2.png" alt="flow2"></p>
+                <h3>ARCHIVE_SHILHUM</h3>
+            </div><!--slide-->
+            <div class="slide_as_2">
+                <p><img src="./images/artist_flow_1.png" alt="flow1"></p>
+                <h3 class="stroke">ARCHIVE_SHILHUM</h3>
+                <p><img src="./images/artist_flow_2.png" alt="flow2"></p>
+                <h3>ARCHIVE_SHILHUM</h3>
+                <p><img src="./images/artist_flow_1.png" alt="flow1"></p>
+                <h3 class="stroke">ARCHIVE_SHILHUM</h3>
+                <p><img src="./images/artist_flow_2.png" alt="flow2"></p>
+                <h3>ARCHIVE_SHILHUM</h3>
+            </div><!--slide-->
+        </div><!--text_wrapper-->
+    </div><!--flow_textbox-->
+    <!-- history -->
+    <div id="history">
+        <div class="history_text">
+            <h1 class="vt"><img src="./images/history_text.png" alt="text"></h1>
+        </div><!--history_text-->
+        <div class="history_box">
+            <div class="history_inner">
+
+                <!--탭 콘텐츠 영역(tabs를 눌렀을때 변화할 내용들이 들어있는 곳) 모든 tab내용은, 각각 다른아이디를 갖고 있어야 하고, 같은 tab-content라는 클래스를 가지고 있어야 합니다.-->
+
+                <div class="history_container" data-aos="zoom-in-right">
+
+                    <div id="history1" class="tab_history">
+                        <!--Content-->
+                        <ul>
+                            <li><img src="./images/history1_1.jpg" alt="history1"></li>
+                            <li>SINCE.2023<br>
+                                ARCHIVE_SHILHUM...</li>
+                        </ul>
+                    </div>
+
+                    <div id="history2" class="tab_history">
+                        <ul>
+                            <li><!-- Swiper -->
+                                <div class="swiper mySwiper_history">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="./images/history2_1.png" alt="history_1">
+                                        </div>
+                                        <div class="swiper-slide"><img src="./images/history2_2.jpg" alt="history_2">
+                                        </div>
+                                        <div class="swiper-slide"><img src="./images/history2_3.jpg" alt="history_3">
+                                        </div>
+                                        <div class="swiper-slide"><img src="./images/history2_4.jpg" alt="history_4">
+                                        </div>
+                                        <div class="swiper-slide"><img src="./images/history2_5.jpg" alt="history_5">
+                                        </div>
+                                        <div class="swiper-slide"><img src="./images/history2_6.jpg" alt="history_6">
+                                        </div>
+                                        <div class="swiper-slide"><img src="./images/history2_7.jpg" alt="history_7">
+                                        </div>
+                                        <div class="swiper-slide"><img src="./images/history2_8.jpg" alt="history_8">
+                                        </div>
+                                        <div class="swiper-slide"><img src="./images/history2_9.jpg" alt="history_9">
+                                        </div>
+                                    </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>Exhibition_</h3>
+                                    <h4>PROJECT.00 • Crack, Trauma, Recover</h4>
+                                    <p>과거의 기억은 때때로 지금의 우리에게
+                                        촉매제로 작용되고,<br> 변화를 야기하며, 감정을 제공하기도 합니다.</p>
+                                    <p>Date : 23. 03. 16 - 03. 19<br>
+                                        Time : 11:00 - 20:00<br>
+                                        Place : 성수 뎁센드 갤러리</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="history3" class="tab_history">
+                        <ul>
+                            <li><!-- Swiper -->
+                                <div class="swiper mySwiper_history">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="./images/history3_1.jpg" alt="history_1">
+                                        </div>
+                                        <div class="swiper-slide"><img src="./images/history3_2.jpg" alt="history_2">
+                                        </div>
+                                        <div class="swiper-slide"><img src="./images/history3_3.jpg" alt="history_3">
+                                        </div>
+                                        <div class="swiper-slide"><img src="./images/history3_4.jpg" alt="history_4">
+                                        </div>
+                                        <div class="swiper-slide"><img src="./images/history3_5.jpg" alt="history_5">
+                                        </div>
+                                        <div class="swiper-slide"><img src="./images/history3_6.jpg" alt="history_6">
+                                        </div>
+                                    </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>Exhibition_</h3>
+                                    <h4>PROJECT.01 • Present</h4>
+                                    <p>soon...</p>
+                                    <p>Date : 24. 02. 00 - 02. 00<br>
+                                        Time : 11:00 - 20:30<br>
+                                        Place : 부산 오페라하우스</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="history4" class="tab_history">
+                        <!--Content-->
+                        <p>no information...</p>
+
+                    </div>
+
+                </div><!--history container-->
+
+                <ul class="tabs_history" style="overflow-y: scroll; height:870px;" data-aos="zoom-in-left"
+                    data-aos-delay="50">
+                    <li>
+                        <div date="#history1"><span>→</span><b>01</b>SINCE.2023</div>
+                    </li>
+                    <li>
+                        <div date="#history2"><span>→</span><b>02</b>PROJECT.00</div>
+                    </li>
+                    <li>
+                        <div date="#history3"><span>→</span><b>03</b>PROJECT.01</div>
+                    </li>
+                    <li>
+                        <div date="#history4"><span>→</span><b>04</b>-</a></div>
+                    </li>
+                    <li>
+                        <div date="#history4"><span>→</span><b>05</b>-</a></div>
+                    </li>
+                    <li>
+                        <div date="#history4"><span>→</span><b>06</b>-</a></div>
+                    </li>
+                    <li>
+                        <div date="#history4"><span>→</span><b>07</b>-</a></div>
+                    </li>
+                    <li>
+                        <div date="#history4"><span>→</span><b>08</b>-</a></div>
+                    </li>
+                    <li>
+                        <div date="#history4"><span>→</span><b>09</b>-</a></div>
+                    </li>
+                    <li>
+                        <div date="#history4"><span>→</span><b>10</b>-</a></div>
+                    </li>
+                </ul>
+
+
+            </div><!--history_inner-->
+        </div><!--history_box-->
+
+    </div><!--history-->
+    <div id="contact_us">
+        <div class="typing-txt">
+            <!--내용물안에 클래스를 줘서 스타일을 주면 적용이 안되니(자바스크립트가 클래스를 지웠다 없앴다 하는거라 없어져요~) nth-child등을 이용해 적용해주세요~!-->
+            <ul>
+                <li>A...</li>
+                <li>ARCHIVE</li>
+                <li>AR<span>CHIVE_SHIL</span>HUM</li>
+                <li>ARCHIVE_SHIL</li>
+            </ul>
+
+        </div>
+        <div class="typing"><!--글이 나타나는 위치에 관련된 속성은 여기 주세요!-->
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <ul class="contents_box">
+            <h2 data-aos="zoom-out">CONTACT US</h2>
+            <div>
+                <p data-aos="zoom-out"><a
+                        href="https://www.instagram.com/archive_silhum/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
+                        data-aos-delay="50"><img src="./images/contact_us_instagram.png"
+                            alt="instagram">archive_shilhum</a></p>
+                <p data-aos="zoom-out"><a href="#" data-aos-delay="100"><img src="./images/contact_us_email.png"
+                            alt="email">archive_shilhum@gmail.com</a>
+                </p>
+            </div>
+        </ul><!--contents box-->
+        <img src="./images/contact_us_1.jpg" alt="contact1" class="contact_us_1">
+        <img src="./images/contact_us_2.jpg" alt="contact2" class="contact_us_2">
+        <img src="./images/contact_us_3.jpg" alt="contact3" class="contact_us_3">
+        <img src="./images/contact_us_icon_1.png" alt="contact_icon1" class="contact_icon_1">
+        <img src="./images/contact_us_icon_2.png" alt="contact_icon2" class="contact_icon_2">
+        <img src="./images/contact_us_icon_3.png" alt="contact_icon2" class="contact_icon_3">
+    </div><!--#contact_us-->
+    <div id="product">
+        <div class="pd_text"><img src="./images/product_text.png" alt="pd_text" class="pd_text_img">
+            <div class="swiper-button-next product-next"><img src="./images/btn_pd_next.png" alt="next"></div>
+            <div class="swiper-button-prev product-prev"><img src="./images/btn_pd_prev.png" alt="prev"></div>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper pd_list">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide blur_ct1" data-aos="zoom-in">NO.08<a href="#"><img src="./images/pd_8.jpg"
+                            alt="pd8">
+                        <h5 class="pd_blur"><a href="./sub_shop.html">STAND LAMP</a></h5>
+                    </a></div>
+                <div class="swiper-slide blur_ct2" data-aos="zoom-in" data-aos-delay="50">NO.09<a href="#"><img
+                            src="./images/pd_9.jpg" alt="pd9">
+                        <h5 class="pd_blur"><a href="./sub_shop.html">MASKING TAPE</a></h5>
+                    </a></div>
+                <div class="swiper-slide blur_ct3" data-aos="zoom-in" data-aos-delay="100">NO.10<a href="#"><img
+                            src="./images/pd_10.jpg" alt="pd10">
+                        <h5 class="pd_blur"><a href="./sub_shop.html">CLOTHES</a></h5>
+                    </a></div>
+                <div class="swiper-slide blur_ct4" data-aos="zoom-in" data-aos-delay="150">NO.11<a href="#"><img
+                            src="./images/pd_11.jpg" alt="pd11">
+                        <h5 class="pd_blur"><a href="./sub_shop.html">CLOTHES</a></h5>
+                    </a></div>
+                <div class="swiper-slide blur_ct5" data-aos="zoom-in" data-aos-delay="200">NO.12<a href="#"><img
+                            src="./images/pd_12.jpg" alt="pd12">
+                        <h5 class="pd_blur"><a href="./sub_shop.html">CLOTHES</a></h5>
+                    </a></div>
+                <div class="swiper-slide blur_ct6" data-aos="zoom-in" data-aos-delay="250">NO.13<a href="#"><img
+                            src="./images/pd_13.jpg" alt="pd13">
+                        <h5 class="pd_blur"><a href="./sub_shop.html">CLOTHES</a></h5>
+                    </a></div>
+                <div class="swiper-slide blur_ct7" data-aos="zoom-in" data-aos-delay="300">NO.14<a href="#"><img
+                            src="./images/pd_14.jpg" alt="pd14">
+                        <h5 class="pd_blur"><a href="./sub_shop.html">POSTER</a></h5>
+                    </a></div>
+                <div class="swiper-slide blur_ct8" data-aos="zoom-in" data-aos-delay="350">NO.15<a href="#"><img
+                            src="./images/pd_15.jpg" alt="pd15">
+                        <h5 class="pd_blur"><a href="./sub_shop.html">POSTER</a></h5>
+                    </a></div>
+                <div class="swiper-slide blur_ct9" data-aos="zoom-in" data-aos-delay="400">NO.16<a href="#"><img
+                            src="./images/pd_16.jpg" alt="pd16">
+                        <h5 class="pd_blur"><a href="./sub_shop.html">POSTER</a></h5>
+                    </a></div>
+
+            </div>
+
+        </div>
+
+    </div><!--product-->
+    <!-- footer -->
+    <div id="footer">
+        <h1><a href="./index.html"><img src="./images/footer_logo.jpg" alt="footer_logo"></a></h1>
+        <p>(주)도슨트</p>
+        <p><b>주소</b>부산광역시 중구 중앙동4가 15-40</p>
+        <ul>
+            <li><b>대표이사</b>문성빈</li>
+            <li><b>대표번호</b>010 0000 0000
+            </li>
+            <li><b>통신판매정보</b>000-00-00001</li>
+        </ul>
+        <p><b>E-MAIL</b> hitjdqls@gmail.com</p>
+        <p>©copyright</p>
+        <ol>
+            <li><select name="language" id="language">
+                    <option value="10">한국어</option>
+                    <option value="20">English</option>
+                </select>
+            </li>
+            <li><a
+                    href="https://www.notion.so/ko-kr/product?utm_source=google&utm_campaign=10805039169&utm_medium=104440699897&utm_content=455555244437&utm_term=notion&targetid=kwd-312974742&gad_source=1&gclid=Cj0KCQiAkKqsBhC3ARIsAEEjuJhjCHW5SXAFGW02aDu0BtoR8M4C_ZYq_x6-vOpzglySCYcB-INZ9M8aAk-QEALw_wcB"><img
+                        src="./images/footer_notion.png" alt="notion"></a>
+            </li>
+            <li><a href="https://www.instagram.com/"><img src="./images/footer_instagram.png" alt="instagram"></a>
+            </li>
+            <li><a href="https://www.kakaocorp.com/page/"><img src="./images/footer_kakao.png" alt="kakao"></a>
+            </li>
+        </ol>
+
+    </div><!--#footer-->
+
+
+    <!-- aos -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--  history tab jQuery library -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!-- 햄버거 메뉴 js -->
+    <script src="./js/hamburger.js"></script>
+    <!-- js link -->
+    <script src="./js/sub_artist_script.js"></script>
+
+    <!-- 페이지 arrow 슬라이드 -->
+    <script>
+        $(function () {
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 500);//움직이는 시간 조정
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

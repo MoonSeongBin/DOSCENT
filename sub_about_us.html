@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>DO:SCENT</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./images/favicon_2.png" type="image/x-icon">
+    <!-- intel one mono font -->
+    <link rel="stylesheet" href="./css/font_intel_one_mono.css">
+    <!-- pretendard font -->
+    <link rel="stylesheet" href="./css/font_pretendard.css">
+    <!--aos 애니메이션 효과 CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 페이지 arrow library -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/sub_about_us.css">
+
+</head>
+
+<body>
+    <div class="body_inner">
+
+        <!-- gnb, logo -->
+        <div id="gnb">
+            <div class="fixed_left">
+                <a href="./index.html"><img src="./images/menu_logo.jpg" alt="logo "></a>
+            </div><!--fixed close-->
+
+            <!-- fixed answer, arrow -->
+            <div class="fixed_bottom">
+                <a href="#">
+                    <img src="./images/fixed_answer.png" alt="fixed"></a>
+                <a href="#"><img src="./images/fixed_arrow.png" alt="fixed"></a>
+                <!-- hover -->
+                <a href="#">
+                    <img src="./images/fixed_hover_answer.png" alt="fixed_hover"></a>
+                <a href="#mb_video"><img src="./images/fixed_hover_arrow.png" alt="fixed_hover"></a>
+            </div><!--fixed_bottom-->
+            <div class="fixed_right">
+                <ul>
+                    <li><a href="#"><img src="./images/btn_join.png" alt="btn_join"></a></li>
+                    <li><a href="#"><img src="./images/btn_cart.png" alt="btn_cart"></a></li>
+                    <li><a href="#"><img src="./images/btn_heart.png" alt="btn_heart"></a></li>
+                    <li><a href="#"><img src="./images/btn_hover_login.png" alt="btn_join"></a></li>
+                    <li><a href="#"><img src="./images/btn_hover_cart.png" alt="btn_cart"></a></li>
+                    <li><a href="#"><img src="./images/btn_hover_heart.png" alt="btn_heart"></a></li>
+                </ul>
+            </div><!--fixed_right-->
+        </div><!--gnb-->
+
+        <!-- 햄버거 버튼 -->
+        <!--여기부터 필요구조 시작-->
+        <div class="hb">
+            <div class="slide-open" id="slide-open">
+                <span class="burgur" id="burgur">
+                    <span class="top-line"></span>
+                    <span class="bot-line"></span>
+                </span>
+            </div><!--slide-open-->
+            <div class="slide_hb" id="slide_hb">
+
+                <div class="navi_inner">
+
+                    <!--탭 콘텐츠 영역(tabs를 눌렀을때 변화할 내용들이 들어있는 곳) 모든 tab내용은, 각각 다른아이디를 갖고 있어야 하고, 같은 tab-content라는 클래스를 가지고 있어야 합니다.-->
+
+
+                    <ul class="navi_tabs">
+                        <li>
+                            <div zzz="#navi1">ABOUT US</div>
+                        </li>
+                        <li>
+                            <div zzz="#navi2">ARTIST</div>
+                        </li>
+                        <li>
+                            <div zzz="#navi3">SHOP</div>
+                        </li>
+                        <li>
+                            <div zzz="#navi4">NOTICE</div>
+                        </li>
+
+                    </ul>
+                    <div class="navi_container" data-aos="zoom-in-right">
+
+                        <div id="navi1" class="navi_tab">
+                            <!--Content-->
+                            <ul>
+                                <li>
+                                    <div><a href="./sub_about_us.html">VALUE</a></div>
+                                <li>
+                                    <div><a href="./sub_identity.html">IDENTITY</a></div>
+                            </ul>
+                        </div>
+
+                        <div id="navi2" class="navi_tab">
+                            <ul>
+                                <li>
+                                    <div><a href="./sub_artist.html">ARCHIVE SHILHUM</a></div>
+                                <li>
+                                    <div><a href="./sub_artist.html">BEAK JI HYE</a></div>
+                                <li>
+                                    <div><a href="./sub_artist.html">BECKY</a></div>
+                                <li>
+                                    <div><a href="./sub_artist.html">SONG H.</a></div>
+                                <li>
+                                    <div><a href="./sub_artist.html">YOONSEUL</a></div>
+
+                            </ul>
+                        </div>
+                        <div id="navi3" class="navi_tab">
+                            <ul>
+                                <li>
+                                    <div><a href="./sub_shop.html">ALL</a></div>
+                                <li>
+                                    <div><a href="./sub_shop.html">ACC</a></div>
+                                <li>
+                                    <div><a href="./sub_shop.html">CLOTHES</a></div>
+                                <li>
+                                    <div><a href="./sub_shop.html">DRAWING</a></div>
+                                <li>
+                                    <div><a href="./sub_shop.html">GOODS</a></div>
+                                <li>
+                                    <div><a href="./sub_shop.html">LIGHTING</a></div>
+                                <li>
+                                    <div><a href="./sub_shop.html">MUSIC</a></div>
+                                <li>
+                                    <div><a href="./sub_shop.html">OBJECTS</a></div>
+                                <li>
+                                    <div><a href="./sub_shop.html">ETCS</a></div>
+                            </ul>
+                        </div>
+                        <div id="navi4" class="navi_tab">
+                            <ul>
+                                <li>
+                                    <div><a href="./sub_notice.html">NOTICE</a></div>
+                                <li>
+                                    <div><a href="./sub_notice.html">EVENT</a></div>
+                                <li>
+                                    <div><a href="./sub_notice.html">CONTACT US</a></div>
+                                <li>
+                                    <div><a href="./sub_notice.html">HELP</a></div>
+                                <li>
+                                    <div><a href="./sub_notice.html">WAY TO COME</a></div>
+                            </ul>
+                        </div>
+                    </div><!--navi container-->
+                </div><!--navi_inner-->
+            </div><!--slide-->
+        </div>
+        <!--필요구조 끝-->
+
+        <div id="body_inner">
+            <p id="mb_video">
+                <video src="./video/doscent value video.mp4" autoplay loop muted playsinline></video>
+            </p><!--mb_video-->
+
+            <p id="ct1" class="ct1" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-back">
+                DO:SCENT는 오브제, 가구, 패션, 디자인, 음악 등 장르에 경계가 없는, 다양한 장르의 예술작품을 소개 및 판매하고 있는 편집숍이자<br>
+                부산을 거점으로 신진작가를 발굴하고 소개하며, 다양한 활동을 적극적으로 서포트하는 에이전시입니다.
+                <br>
+                .
+                <br>
+                DO:SCENT is a select shop that introduces and sells works of art of<br>various genres, including
+                objects,
+                furniture, fashion, design, and music, without boundaries.<br>This is an agency based in Busan that
+                discovers
+                and introduces new artists and actively supports various activities.
+            </p><!--ct1-->
+            <div class="ct_length">
+                <img src="./images/about_length_line.png" alt="line" class="lenght_line1">
+            </div><!--ct_length-->
+            <div class="ct2">
+                <h1 data-aos="fade-up" data-aos-duration="1000">TO RECORD OUR SCENT</h1>
+                <ul class="ct_inner1">
+                    <li data-aos="fade-up" data-aos-duration="1200"><img src="./images/about_main1.jpg" alt="main1">
+                    </li>
+                    <li data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                        <h3>: 우리의 향기를 기록하다.</h3>
+                        <p>'DO:SCENT', 도슨트라는 브랜드
+                            네임은<br>
+                            전시물을 비롯한 작가, 그리고 공간 등 그들에 대한 설명을<br>
+                            알기 쉽게 제공하는 사람이라는 뜻을 가지고 있는 단어 'docent'에<br>
+                            향기라는 뜻을 가지고 있는 단어 'scent'를 재조합하여 탄생시킨 단어입니다.</p>
+                        <p>향기는 후각으로 느낄 수 있는 ‘냄새’의 한계를
+                            뛰어넘습니다.<br>
+                            향기는 사람에 따라, 공간에 따라, 환경에 따라 다 다르게 표현되고 나타내어집니다.<br>
+                            그리고 좋은 향기는 마침내 그 공간을 기억하게 만듭니다.
+                        </p>
+                    </li>
+                </ul><!--ct_inner1-->
+                <ul class="ct_inner2">
+                    <li data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                        <p>좋은 향기가 주는 '공간의 기억'은<br>
+                            시간이 지날수록 사람들에게 의미 있는 가치로 기억되기 쉽습니다.
+                        </p>
+                        <p>우리는 작가와 작품이 주는 고유의 향기가<br>
+                            그 공간을 의미 있는 기억으로 만들어낼 수 있도록<br>
+                            그들이 만들어낸 좋은 향기를 소개하고 기록하고자 노력합니다.</p>
+                        <p>이로써 우리 브랜드를 통해 세상에 알려지지 못했던 신진 작가들이<br>
+                            대중들에게 한걸음 더 가까이 다가갈 수 있도록,<br>
+                            더욱 적극적인 활동을 할 수 있는 계기가 될 수 있도록 지원하고자 합니다.</p>
+                    </li>
+                    <li><img src="./images/about_main2.jpg" alt="main2" data-aos="fade-up" data-aos-duration="1200">
+                        <img src="./images/about_main3.jpg" alt="main3" data-aos="fade-up" data-aos-duration="1500">
+                    </li>
+
+                </ul><!--ct_inner2-->
+            </div><!--ct2-->
+
+            <div class="ct3">
+                <h1 data-aos="fade-up" data-aos-duration="1000">WE THINK ABOUT VALUES</h1>
+                <h1 data-aos="fade-up" data-aos-duration="1000">THAT TRANSCEND TIME AND SPACE</h1>
+                <ul class="ct_inner3">
+                    <li data-aos="fade-up" data-aos-duration="1200"><img src="./images/about_main4.jpg" alt="main4">
+                    </li>
+                    <li data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                        <h3>: 우리는 시공간을 초월하는 가치에 대해 생각합니다.</h3>
+                        <p>브랜드의 심볼마크 '헤드셋'에서<br>
+                            우리는 헤드셋이 제공해 주는 기능에서 생각해 볼 수 있듯,<br>
+                            작가들이 만들어낸 좋은 향기를 대중들은 시간이나 공간, 장소의 제약 없이<br>
+                            자유롭게 보고, 듣고, 감상할 수 있는 기회가 될 수 있도록 제공하고자 합니다.
+                        </p>
+                        <p>오로지 본인의 취향과 감도에 집중하며<br>
+                            본인이 좋아하는 것, 본인의 가치와 일맥상통하는 것들을 찾고<br>
+                            그 속에서 작가의 향기와 공감대를 이루고 소통하길 소망합니다.</p>
+                    </li>
+                </ul><!--ct_inner3-->
+                <ul class="ct_inner4">
+                    <li data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                        <p>그리고 이 과정들 속에서 본인을 이해하며<br>
+                            나아가 삶을 살아가야 하는 이유,<br>
+                            시간을 초월하는 가치에 대해 생각해 볼 수 있는 계기를 제공하고자 합니다.</p>
+                        <p>당신의 일상에 예술의 향기가 자연스럽게 스며들 수 있었으면 좋겠습니다.<br><br>
+                            공간의 가치를 더할 수 있도록,
+                        </p>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="1200"><img src="./images/about_main5.jpg" alt="main5">
+                    </li>
+                </ul><!--ct_inner4-->
+            </div><!--ct3-->
+
+            <div class="ct_bg">
+                <div class="about_logo">
+                    <img src="./images/about_logo_1.png" alt="logo1" class="logo1" data-aos="fade-right"
+                        data-aos-delay="150">
+                    <img src="./images/about_logo_2.png" alt="logo2" class="logo2" data-aos="fade-right">
+                    <img src="./images/about_logo_2.png" alt="logo3" class="logo3" data-aos="fade-left">
+                    <img src="./images/about_logo_2.png" alt="logo3" class="logo4" data-aos="fade-left"
+                        data-aos-delay="150">
+                </div>
+                <div class="ct4">
+                    <ul>
+                        <li><a href="./sub_identity.html">Go to see the <span>BRAND IDENTITY</span> →</a></li>
+                    </ul>
+
+                </div><!--ct4-->
+            </div>
+
+
+            <!-- footer -->
+            <div id="footer">
+
+                <h1><a href="./index.html"><img src="./images/footer_logo.jpg" alt="footer_logo"></a></h1>
+                <p>(주)도슨트</p>
+                <p><b>주소</b>부산광역시 중구 중앙동4가 15-40</p>
+                <ul>
+                    <li><b>대표이사</b>문성빈</li>
+                    <li><b>대표번호</b>010 0000 0000
+                    </li>
+                    <li><b>통신판매정보</b>000-00-00001</li>
+                </ul>
+                <p><b>E-MAIL</b> hitjdqls@gmail.com</p>
+                <p>©copyright</p>
+                <ol>
+                    <li><select name="language" id="language">
+                            <option value="10">한국어</option>
+                            <option value="20">English</option>
+                        </select>
+                    </li>
+                    <li><a
+                            href="https://www.notion.so/ko-kr/product?utm_source=google&utm_campaign=10805039169&utm_medium=104440699897&utm_content=455555244437&utm_term=notion&targetid=kwd-312974742&gad_source=1&gclid=Cj0KCQiAkKqsBhC3ARIsAEEjuJhjCHW5SXAFGW02aDu0BtoR8M4C_ZYq_x6-vOpzglySCYcB-INZ9M8aAk-QEALw_wcB"><img
+                                src="./images/footer_notion.png" alt="notion"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/"><img src="./images/footer_instagram.png"
+                                alt="instagram"></a>
+                    </li>
+                    <li><a href="https://www.kakaocorp.com/page/"><img src="./images/footer_kakao.png" alt="kakao"></a>
+                    </li>
+                </ol>
+
+            </div><!--#footer-->
+
+            <!-- bg noise -->
+            <div class="noise1"></div>
+            <div class="noise2"></div>
+            <div class="noise3"></div>
+            <div class="noise4"></div>
+            <!-- btn_down slider -->
+            <a href="#ct1"><img src="./images/btn_down_slider.png" alt="down_slider" class="down_slider"></a>
+
+        </div><!--body_inner-->
+
+        <!-- aos -->
+        <script>
+            AOS.init();
+        </script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <!-- 햄버거 메뉴 js -->
+        <script src="./js/hamburger.js"></script>
+        <!-- js link -->
+        <script src="./js/sub_about_us.js"></script>
+        <!-- 페이지 arrow 슬라이드 -->
+        <script>
+            $(function () {
+                $('a[href*="#"]:not([href="#"])').click(function () {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length) {
+                            $('html, body').animate({
+                                scrollTop: target.offset().top
+                            }, 500);//움직이는 시간 조정
+                            return false;
+                        }
+                    }
+                });
+            });
+        </script>
+</body>
+
+</html>

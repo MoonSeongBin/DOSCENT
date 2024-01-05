@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>D0:SCENT</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./images/favicon_2.png" type="image/x-icon">
+    <!-- intel one mono font -->
+    <link rel="stylesheet" href="./css/font_intel_one_mono.css">
+    <!-- pretendard font -->
+    <link rel="stylesheet" href="./css/font_pretendard.css">
+    <!--aos 애니메이션 효과 CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 페이지 arrow library -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/sub_identity.css">
+</head>
+
+<body>
+    <!-- gnb, logo -->
+    <div id="gnb">
+        <div class="fixed_left">
+            <a href="./index.html"><img src="./images/menu_logo.jpg" alt="logo "></a>
+        </div><!--fixed left-->
+
+        <!-- fixed answer, arrow -->
+        <div class="fixed_bottom">
+            <a href="#">
+                <img src="./images/fixed_answer.png" alt="fixed"></a>
+            <a href="#mb_video"><img src="./images/fixed_arrow.png" alt="fixed"></a>
+            <!-- hover -->
+            <a href="#">
+                <img src="./images/fixed_hover_answer.png" alt="fixed_hover"></a>
+            <a href="#mb_video"><img src="./images/fixed_hover_arrow.png" alt="fixed_hover"></a>
+        </div><!--fixed_bottom-->
+        <div class="fixed_right">
+            <ul>
+                <li><a href="#"><img src="./images/btn_join.png" alt="btn_join"></a></li>
+                <li><a href="#"><img src="./images/btn_cart.png" alt="btn_cart"></a></li>
+                <li><a href="#"><img src="./images/btn_heart.png" alt="btn_heart"></a></li>
+                <li><a href="#"><img src="./images/btn_hover_login.png" alt="btn_join"></a></li>
+                <li><a href="#"><img src="./images/btn_hover_cart.png" alt="btn_cart"></a></li>
+                <li><a href="#"><img src="./images/btn_hover_heart.png" alt="btn_heart"></a></li>
+            </ul>
+        </div><!--fixed_right-->
+    </div><!--gnb-->
+
+    <!-- 햄버거 버튼 -->
+    <!--여기부터 필요구조 시작-->
+    <div class="hb">
+        <div class="slide-open" id="slide-open">
+            <span class="burgur" id="burgur">
+                <span class="top-line"></span>
+                <span class="bot-line"></span>
+            </span>
+        </div><!--slide-open-->
+        <div class="slide_hb" id="slide_hb">
+
+            <div class="navi_inner">
+
+                <!--탭 콘텐츠 영역(tabs를 눌렀을때 변화할 내용들이 들어있는 곳) 모든 tab내용은, 각각 다른아이디를 갖고 있어야 하고, 같은 tab-content라는 클래스를 가지고 있어야 합니다.-->
+
+
+                <ul class="navi_tabs">
+                    <li>
+                        <div zzz="#navi1">ABOUT US</div>
+                    </li>
+                    <li>
+                        <div zzz="#navi2">ARTIST</div>
+                    </li>
+                    <li>
+                        <div zzz="#navi3">SHOP</div>
+                    </li>
+                    <li>
+                        <div zzz="#navi4">NOTICE</div>
+                    </li>
+
+                </ul>
+                <div class="navi_container" data-aos="zoom-in-right">
+
+                    <div id="navi1" class="navi_tab">
+                        <!--Content-->
+                        <ul>
+                            <li>
+                                <div><a href="./sub_about_us.html">VALUE</a></div>
+                            <li>
+                                <div><a href="./sub_identity.html">IDENTITY</a></div>
+                        </ul>
+                    </div>
+
+                    <div id="navi2" class="navi_tab">
+                        <ul>
+                            <li>
+                                <div><a href="./sub_artist.html">ARCHIVE SHILHUM</a></div>
+                            <li>
+                                <div><a href="./sub_artist.html">BEAK JI HYE</a></div>
+                            <li>
+                                <div><a href="./sub_artist.html">BECKY</a></div>
+                            <li>
+                                <div><a href="./sub_artist.html">SONG H.</a></div>
+                            <li>
+                                <div><a href="./sub_artist.html">YOONSEUL</a></div>
+
+                        </ul>
+                    </div>
+                    <div id="navi3" class="navi_tab">
+                        <ul>
+                            <li>
+                                <div><a href="./sub_shop.html">ALL</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">ACC</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">CLOTHES</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">DRAWING</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">GOODS</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">LIGHTING</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">MUSIC</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">OBJECTS</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">ETCS</a></div>
+                        </ul>
+                    </div>
+                    <div id="navi4" class="navi_tab">
+                        <ul>
+                            <li>
+                                <div><a href="./sub_notice.html">NOTICE</a></div>
+                            <li>
+                                <div><a href="./sub_notice.html">EVENT</a></div>
+                            <li>
+                                <div><a href="./sub_notice.html">CONTACT US</a></div>
+                            <li>
+                                <div><a href="./sub_notice.html">HELP</a></div>
+                            <li>
+                                <div><a href="./sub_notice.html">WAY TO COME</a></div>
+                        </ul>
+                    </div>
+
+                </div><!--navi container-->
+            </div><!--navi_inner-->
+        </div><!--slide-->
+    </div>
+    <!-- 필요구조 끝-->
+
+    <div id="body_inner">
+        <p id="mb_video">
+            <video src="./video/doscent identity video.mp4" autoplay loop muted playsinline></video>
+        </p><!--mb_video-->
+        <div id="brand_essence">
+            <ul>
+                <li class="title" data-aos="fade-right">BRAND ESSENCE</li>
+                <li class="explain" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1000">브랜드 네임
+                    '도슨트'의 근본은 ‘가르치다'라는 뜻의 라틴어 docere에서 유래된,
+                    소정의 지식을 갖춘 안내인 'docent'에서<br> 뿌리를 내려갑니다.</li>
+            </ul>
+            <div class="ess_img">
+                <img src="./images/identity_ess_1.png" alt="ess1" data-aos="zoom-out">
+                <img src="./images/identity_ess_2.png" alt="ess2" data-aos="zoom-out" data-aos-delay="50"
+                    data-aos-duration="1000">
+                <img src="./images/identity_ess_3.png" alt="ess2" data-aos="zoom-out" data-aos-delay="150"
+                    data-aos-duration="1000">
+                <img src="./images/identity_ess_4.png" alt="ess4" data-aos="zoom-out" data-aos-delay="250"
+                    data-aos-duration="1000">
+                <img src="./images/identity_ess_5.png" alt="ess5" data-aos="zoom-out" data-aos-delay="350"
+                    data-aos-duration="1000">
+                <img src="./images/identity_ess_6.png" alt="ess6" data-aos="zoom-out" data-aos-delay="450"
+                    data-aos-duration="1000">
+                <img src="./images/identity_ess_7.png" alt="ess7" data-aos="zoom-out" data-aos-delay="550"
+                    data-aos-duration="1000">
+            </div><!--ess_img-->
+        </div><!--#brand_essence-->
+        <div id="logo_shape">
+            <ul>
+                <li class="title" data-aos="fade-right">LOGO SHAPE</li>
+                <li class="explain" data-aos="fade-up" data-aos-duration="1000">SHAPE, ‘형태’는 각각의 생김새마다 사람이 심리적으로 느끼는 감정과
+                    의미가
+                    다릅니다.<br>
+                    우리는 이 각각의 형태가 주는 의미를 이해하고, 인간이 형태에서 느끼게 되는 심리적인 감성과 경험적 의미를<br>
+                    활용하고자 하였으며, 도형의 해체와 재조합을 통해 로고 쉐입을 제작하였습니다.<br>
+                    이를 통해 자유로우면서도 단단하고, 진취적인 브랜드의 아이덴티티를 직관적으로 전달하고자 합니다.</li>
+            </ul>
+            <div class="shape_img">
+                <img src="./images/identity_shape_1.png" alt="shape1" data-aos="zoom-out" data-aos-delay="50"
+                    data-aos-duration="1000">
+                <img src="./images/identity_shape_2.png" alt="shape2" data-aos="zoom-out" data-aos-delay="150"
+                    data-aos-duration="1000">
+                <img src="./images/identity_shape_3.png" alt="shape3" data-aos="zoom-out" data-aos-delay="250"
+                    data-aos-duration="1000">
+            </div><!--shape_img-->
+        </div><!--#logo_shape-->
+        <div id="symbol">
+            <ul>
+                <li>
+                    <p class="title" data-aos="fade-right">
+                        SYMBOL
+                    </p>
+                    <p class="symbol1"><img src="./images/identity_symbol.png" alt="symbol1"></p>
+                </li>
+                <li class="explain" data-aos="fade-up" data-aos-duration="1000">도슨트의 심볼 디자인 컨셉은 시간이나 공간의 제약이 없이,<br>
+                    생생하고 몰입감 있는 경험을 전달해 주는 ‘헤드셋’ 역할에서<br>
+                    영감을 받아 알파벳 C와 헤드셋 쉐입을 조합하여 제작하였습니다.
+                    <br>
+                    <br>
+                    우리는 헤드셋이 제공해주는 기능처럼, 대중들이 시간이나 장소의<br>
+                    제약이없는 어디에서든 작가들의 작품에 생생하게 ‘집중’하며<br>
+                    감상하길 소망합니다.
+                </li>
+            </ul>
+        </div><!--#symbol-->
+        <div id="design">
+            <img src="./images/identity_design_2.png" alt="arrow1" data-aos="fade-right" data-aos-duration="1000">
+            <p class="design_text1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">FOCUS ON
+                YOUR&nbsp;
+                <img src="./images/identity_design_3.png" alt="3">
+            </p>
+            <p class="design_text1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"><img
+                    src="./images/identity_design_4.png" alt="4">&nbsp;PREFERENCES</p>
+            <p class="design_text2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">AND SENSITIVITY
+                *</p>
+
+            <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150">ADD VALUE TO YOUR LIFE</p>
+        </div><!--design-->
+        <div id="logo">
+            <div class="logo_type">
+                <ul>
+                    <li class="title" data-aos="fade-right">LOGO TYPE</li>
+                    <li data-aos="zoom-out"><img src="./images/identity_type.png" alt="type"></li>
+                </ul>
+            </div><!--logo_type-->
+            <div class="logo_mark">
+                <p class="title" data-aos="fade-right">LOGO MARK</p>
+                <ul>
+                    <li data-aos="zoom-out" data-aos-delay="50"><img src="./images/identity_mark_1.png" alt="mark1">
+                    </li>
+                    <li data-aos="zoom-out" data-aos-delay="150"><img src="./images/identity_mark_2.png" alt="mark2">
+                    </li>
+                </ul>
+            </div><!--logo_mark-->
+        </div><!--#logo-->
+        <div id="identity">
+            <p class="title" data-aos="fade-right">
+                IDENTITY
+            </p>
+            <ul data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-back">
+                <li><img src="./images/identity_id_1.png" alt="id1">
+                    <p data-aos="zoom-out" data-aos-delay="50" data-aos-duration="1000">작가들은 행동합니다. 새로운 창작물을 만들어내기 위해
+                        다양한
+                        것들에 영감을 얻고, 고뇌합니다.<br>
+                        우리들은 행동합니다. 작가 개개인의 개성을 이해하고,<br>
+                        그들의 가능성과 잠재력을 발굴하여 더 큰 세상의 디딤돌이 될 수 있도록 서포트 합니다.</p>
+                </li>
+                <li><img src="./images/identity_id_2.png" alt="id2">
+                    <p data-aos="zoom-out" data-aos-delay="150" data-aos-duration="1000">작가들이 만들어낸 창작물의 가치는 화폐 단위의 측정에
+                        한정되지
+                        않습니다.<br>
+                        작가가 표현하고자 하는 의미에 그들만의 향기를 더해<br>
+                        감히 측정되지 않을 가치를 만들어내고자 합니다.</p>
+                </li>
+                <li><img src="./images/identity_id_3.png" alt="id3">
+                    <p data-aos="zoom-out" data-aos-delay="50" data-aos-duration="1000">향기 또한 기억이고, 흔적입니다.<br>
+                        우리는 행동의 결과물을 변하지 않을 '향기'라는 기억물로 남겨<br>
+                        시공간을 뛰어넘는 가치로 기록해 나가고자 합니다.</p>
+                </li>
+            </ul>
+        </div><!--#identity-->
+        <div id="typography">
+            <div class="ct1">
+                <p class="title" data-aos="fade-right">TYPOGRATHY</p>
+                <P data-aos="fade-up" data-aos-duration="1000">브랜드 도슨트의 지정서체는 웹페이지의 모든 텍스트에 동일하게 적용되어 일관된 아이덴티티를 구현합니다.
+                </P>
+            </div>
+            <div class="ct2">
+                <ul>
+                    <li data-aos="zoom-out" data-aos-delay="50">
+                        <p>Pretendard</p>
+                        <h1>AaBb 가나다</h1>
+                        <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                        <p>abcdefghijklmnopqrstuvwxyz</p>
+                        <p>가나다라마바사아자차카타파하</p>
+                        <p>1234567890?!</p>
+                    </li>
+                    <li data-aos="zoom-out" data-aos-delay="150">
+                        <p>Intel one mono</p>
+                        <h1>AaBb</h1>
+                        <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                        <p>abcdefghijklmnopqrstuvwxyz</p>
+                        <p>1234567890?!</p>
+                    </li>
+                </ul>
+            </div>
+        </div><!--#typography-->
+        <div class="plus">
+            <div class="about_logo">
+                <img src="./images/about_logo_1.png" alt="logo1" class="logo1" data-aos="fade-right"
+                    data-aos-delay="150">
+                <img src="./images/about_logo_2.png" alt="logo2" class="logo2" data-aos="fade-right">
+                <img src="./images/about_logo_2.png" alt="logo3" class="logo3" data-aos="fade-left">
+                <img src="./images/about_logo_2.png" alt="logo3" class="logo4" data-aos="fade-left"
+                    data-aos-delay="150">
+            </div>
+            <div class="plus_inner">
+                <ul>
+                    <li><a href="#">브랜드 소개서 보러가기 notion →</a></li>
+                    <li><a href="./sub_about_us.html">브랜드 가치소개 보러가기 →</a></li>
+                    <li><a href="#">브랜드 협업, 문의사항 hitjdqls@gmail.com</a></li>
+            </div>
+            </ul>
+        </div><!--plus-->
+        <!-- footer -->
+        <div id="footer">
+            <h1><a href="./index.html"><img src="./images/footer_logo.jpg" alt="footer_logo"></a></h1>
+            <p>(주)도슨트</p>
+            <p><b>주소</b>부산광역시 중구 중앙동4가 15-40</p>
+            <ul>
+                <li><b>대표이사</b>문성빈</li>
+                <li><b>대표번호</b>010 0000 0000
+                </li>
+                <li><b>통신판매정보</b>000-00-00001</li>
+            </ul>
+            <p><b>E-MAIL</b> hitjdqls@gmail.com</p>
+            <p>©copyright</p>
+            <ol>
+                <li><select name="language" id="language">
+                        <option value="10">한국어</option>
+                        <option value="20">English</option>
+                    </select>
+                </li>
+                <li><a
+                        href="https://www.notion.so/ko-kr/product?utm_source=google&utm_campaign=10805039169&utm_medium=104440699897&utm_content=455555244437&utm_term=notion&targetid=kwd-312974742&gad_source=1&gclid=Cj0KCQiAkKqsBhC3ARIsAEEjuJhjCHW5SXAFGW02aDu0BtoR8M4C_ZYq_x6-vOpzglySCYcB-INZ9M8aAk-QEALw_wcB"><img
+                            src="./images/footer_notion.png" alt="notion"></a>
+                </li>
+                <li><a href="https://www.instagram.com/"><img src="./images/footer_instagram.png" alt="instagram"></a>
+                </li>
+                <li><a href="https://www.kakaocorp.com/page/"><img src="./images/footer_kakao.png" alt="kakao"></a>
+                </li>
+            </ol>
+
+        </div><!--#footer-->
+
+        <!-- bg noise -->
+        <div class="noise1"></div>
+        <div class="noise2"></div>
+        <div class="noise3"></div>
+        <div class="noise4"></div>
+        <div class="noise5"></div>
+        <div class="noise6"></div>
+        <div class="design_icon"><img src="./images/contact_us_icon_2.png" alt=""></div>
+        <!-- btn_down slider -->
+        <a href="#brand_essence"><img src="./images/btn_down_slider.png" alt="down_slider" class="down_slider"></a>
+    </div><!--body_inner-->
+
+    <!-- aos -->
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- 햄버거 메뉴 js -->
+    <script src="./js/hamburger.js"></script>
+    <!-- js link -->
+    <script src="./js/sub_identity.js"></script>
+    <!-- 페이지 arrow 슬라이드 -->
+    <script>
+        $(function () {
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 500);//움직이는 시간 조정
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

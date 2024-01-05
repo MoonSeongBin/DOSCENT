@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>DO:SCENT</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./images/favicon_2.png" type="image/x-icon">
+    <!-- intel one mono font -->
+    <link rel="stylesheet" href="./css/font_intel_one_mono.css">
+    <!-- pretendard font -->
+    <link rel="stylesheet" href="./css/font_pretendard.css">
+    <!--css link-->
+    <link type="text/css" rel="stylesheet" href="./css/sub_notice.css">
+    <!-- 페이지 스크롤,햄버거 library -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+
+    <!-- 필수 js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.9.1/jquery-ui.min.js"
+        integrity="sha256-UezNdLBLZaG/YoRcr48I68gr8pb5gyTBM+di5P8p6t8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+</head>
+
+<body>
+    <!-- 배경 글씨 -->
+    <h1 class="bg_text">DO:SCENT DO:SCENT DO:SCENT DO:SCENT</h1>
+    <!-- top_흘러가는 글씨 -->
+    <div id="flow" class="flow_textbox">
+        <!--화면 밖에 나가는 것은 안보이게 만들 용도-->
+        <div class="text_wrapper">
+            <div class="slide_top">
+                <a href="#">신규 가입 고객 10% 할인쿠폰 및 무료배송 쿠폰 증정 _</a>
+                <a href="#">5만원 이상 구매시 사은품 증정 및 무료배송 _</a>
+                <a href="#">카카오톡 플러스친구 추가시 추가할인쿠폰 증정 _</a>
+                <a href="#">신규 가입 고객 10% 할인쿠폰 및 무료배송 쿠폰 증정 _</a>
+                <a href="#">5만원 이상 구매시 사은품 증정 및 무료배송 _</a>
+                <a href="#">카카오톡 플러스친구 추가시 추가할인쿠폰 증정 _</a>
+            </div><!--slide-->
+            <div class="slide_top">
+                <a href="#">신규 가입 고객 10% 할인쿠폰 및 무료배송 쿠폰 증정 _</a>
+                <a href="#">5만원 이상 구매시 사은품 증정 및 무료배송 _</a>
+                <a href="#">카카오톡 플러스친구 추가시 추가할인쿠폰 증정 _</a>
+                <a href="#">신규 가입 고객 10% 할인쿠폰 및 무료배송 쿠폰 증정 _</a>
+                <a href="#">5만원 이상 구매시 사은품 증정 및 무료배송 _</a>
+                <a href="#">카카오톡 플러스친구 추가시 추가할인쿠폰 증정 _</a>
+            </div><!--slide-->
+        </div><!--text_wrapper-->
+    </div><!--flow_textbox-->
+    <!-- gnb, logo -->
+    <div id="gnb">
+        <!-- fixed answer, arrow -->
+        <div class="fixed_left">
+            <a href="./index.html"><img src="./images/menu_logo.jpg" alt="logo "></a>
+        </div><!--fixed close-->
+
+        <div class="fixed_bottom">
+            <a href="#">
+                <img src="./images/fixed_answer.png" alt="fixed"></a>
+            <a href="#"><img src="./images/fixed_arrow.png" alt="fixed"></a>
+            <!-- hover -->
+            <a href="#">
+                <img src="./images/fixed_hover_answer.png" alt="fixed_hover"></a>
+            <a href="#flow"><img src="./images/fixed_hover_arrow.png" alt="fixed_hover"></a>
+        </div><!--fixed_bottom-->
+        <div class="fixed_right">
+            <ul>
+                <li><a href="#"><img src="./images/btn_join.png" alt="btn_join"></a></li>
+                <li><a href="#"><img src="./images/btn_cart.png" alt="btn_cart"></a></li>
+                <li><a href="#"><img src="./images/btn_heart.png" alt="btn_heart"></a></li>
+                <li><a href="#"><img src="./images/btn_hover_login.png" alt="btn_join"></a></li>
+                <li><a href="#"><img src="./images/btn_hover_cart.png" alt="btn_cart"></a></li>
+                <li><a href="#"><img src="./images/btn_hover_heart.png" alt="btn_heart"></a></li>
+            </ul>
+        </div><!--fixed_right-->
+    </div><!--gnb-->
+    <!-- 햄버거 버튼 -->
+    <!--여기부터 필요구조 시작-->
+    <div class="hb">
+        <div class="slide-open" id="slide-open">
+            <span class="burgur" id="burgur">
+                <span class="top-line"></span>
+                <span class="bot-line"></span>
+            </span>
+        </div><!--slide-open-->
+        <div class="slide_hb" id="slide_hb">
+
+            <div class="navi_inner">
+
+                <!--탭 콘텐츠 영역(tabs를 눌렀을때 변화할 내용들이 들어있는 곳) 모든 tab내용은, 각각 다른아이디를 갖고 있어야 하고, 같은 tab-content라는 클래스를 가지고 있어야 합니다.-->
+
+
+                <ul class="navi_tabs">
+                    <li>
+                        <div zzz="#navi1">ABOUT US</div>
+                    </li>
+                    <li>
+                        <div zzz="#navi2">ARTIST</div>
+                    </li>
+                    <li>
+                        <div zzz="#navi3">SHOP</div>
+                    </li>
+                    <li>
+                        <div zzz="#navi4">NOTICE</div>
+                    </li>
+
+                </ul>
+                <div class="navi_container" data-aos="zoom-in-right">
+
+                    <div id="navi1" class="navi_tab">
+                        <!--Content-->
+                        <ul>
+                            <li>
+                                <div><a href="./sub_about_us.html">VALUE</a></div>
+                            <li>
+                                <div><a href="./sub_identity.html">IDENTITY</a></div>
+                        </ul>
+                    </div>
+
+                    <div id="navi2" class="navi_tab">
+                        <ul>
+                            <li>
+                                <div><a href="./sub_artist.html">ARCHIVE SHILHUM</a></div>
+                            <li>
+                                <div><a href="./sub_artist.html">BEAK JI HYE</a></div>
+                            <li>
+                                <div><a href="./sub_artist.html">BECKY</a></div>
+                            <li>
+                                <div><a href="./sub_artist.html">SONG H.</a></div>
+                            <li>
+                                <div><a href="./sub_artist.html">YOONSEUL</a></div>
+
+                        </ul>
+                    </div>
+                    <div id="navi3" class="navi_tab">
+                        <ul>
+                            <li>
+                                <div><a href="./sub_shop.html">ALL</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">ACC</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">CLOTHES</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">DRAWING</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">GOODS</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">LIGHTING</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">MUSIC</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">OBJECTS</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">ETCS</a></div>
+                        </ul>
+                    </div>
+                    <div id="navi4" class="navi_tab">
+                        <ul>
+                            <li>
+                                <div><a href="./sub_notice.html">NOTICE</a></div>
+                            <li>
+                                <div><a href="./sub_notice.html#ct">EVENT</a></div>
+                            <li>
+                                <div><a href="./sub_notice.html#ct">CONTACT US</a></div>
+                            <li>
+                                <div><a href="./sub_notice.html#help">HELP</a></div>
+                            <li>
+                                <div><a href="./sub_notice.html#way">WAY TO COME</a></div>
+                        </ul>
+                    </div>
+
+                </div><!--navi container-->
+
+
+
+
+            </div><!--history_inner-->
+
+
+        </div><!--slide-->
+    </div>
+    <!--필요구조 끝-->
+
+
+
+
+    <div id="body_inner">
+        <div id="news">
+            <div class="news_inner">
+                <div class="news_left">
+                    <ul>
+                        <li>
+                            <h1>#NEWS</h1>
+                        </li>
+                        <li class="more_hover"><a href="#">more<img src="./images/more_hover.png" alt="more"></a>
+                        </li>
+
+                    </ul>
+                    <ul>
+                        <li><!--이미지 들어감--></li>
+                        <li class="news_1"><img src="./images/news_1.png" alt="news_1"></li>
+                        <li class="news_2"><img src="./images/news_2.png" alt="news_2"></li>
+                        <li class="news_3"><img src="./images/news_3.png" alt="news_3"></li>
+                        <li class="news_4"><img src="./images/news_4.png" alt="news_4"></li>
+                        <li class="news_5"><img src="./images/news_5.png" alt="news_5"></li>
+                        <li class="news_6"><img src="./images/news_6.png" alt="news_6"></li>
+                    </ul>
+                </div><!--news_left-->
+                <div class="news_right">
+                    <ul>
+                        <li class="news_text_1">
+                            <p class="more_hover_t"><a href="#">[2024] ARCHIVE SHILHUM 의 첫 번째 부산 전시회</a></p>
+                            <p>01</p>
+                        </li>
+                        <li class="news_text_2">
+                            <p class="more_hover_t"><a href="#">
+                                    [2024] 백지혜 작가님의 첫 번째 매거진 인터뷰 </a></p>
+                            <p>02</p>
+                        </li>
+                        <li class="news_text_3">
+                            <p class="more_hover_t"><a href="#">[2024] DO:SCENT 새해 스페셜 에디션 판매 안내</a></p>
+                            <p>03</p>
+                        </li>
+                        <li class="news_text_4">
+                            <p class="more_hover_t"><a href="#">[2024] #THE NEW ARTIST : ARCHIVE SHILHUM</a></p>
+                            <p>04</p>
+                        </li>
+                        <li class="news_text_5">
+                            <p class="more_hover_t"><a href="#">[2024] SOLE X DO:SCENT 스페셜 음반 발매</a></p>
+                            <p>05</p>
+                        </li>
+                        <li class="news_text_6">
+                            <p class="more_hover_t"><a href="#">[2023] 한 해를 빛내어준 작가들과의 인터뷰</a></p>
+                            <p>06</p>
+                        </li>
+
+                    </ul>
+                </div><!--news_right-->
+            </div><!--news_inner-->
+        </div><!--#news-->
+
+        <div id="ct">
+            <div class="ct_inner">
+                <div class="event">
+                    <ul>
+                        <li>
+                            <h1>#EVENT</h1>
+                        </li>
+                        <li class="more_hover"><a href="#">more<img src="./images/more_hover.png" alt="more"></a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="more_hover_t"><a href="#">• 카카오톡 플러스 친구 추가시 5,000원 할인쿠폰 증정</a></li>
+                        <li class="more_hover_t"><a href=" #">• 5만원 이상 구매시 사은품 증정 및 무료배송</a></li>
+                        <li class="more_hover_t"><a href=" #">• 신규가입고객 10% 할인 쿠폰 및 무료배송 쿠폰 증정 </a></li>
+                        <li class="more_hover_t"><a href=" #">• 모든 상품 구매만해도 래플 응모 이벤트 참여 가능 !</a></li>
+                        <li class="more_hover_t"><a href=" #">• 체험단 이벤트 안내</a></li>
+                    </ul>
+                </div><!--event-->
+                <div class="contact_us">
+                    <ul>
+                        <li>
+                            <h1>#CONTACT US</h1>
+                        </li>
+                        <li class="more_hover"><a href="#">more<img src="./images/more_hover.png" alt="more"></a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="more_hover_t"><a href="#">• 브랜드 입점 신청서 작성 방법</a></li>
+                        <li class="more_hover_t"><a href="#">• 브랜드 입점 신청서 이메일 : hitjdqls@gmail.com</a></li>
+                        <h5 class="contact_us_download"><a href="#">양식 다운로드</a></h5>
+                    </ul>
+                </div><!--contact_us-->
+            </div><!--ct_inner-->
+        </div><!--#ct-->
+
+        <div id="help">
+            <div class="help_inner">
+                <div class="help_title">
+                    <p>#HELP</p>
+                    <p class="more_hover"><a href="#">more<img src="./images/more_hover.png" alt="hover"></a></p>
+                </div>
+                <ul id="board">
+                    <li><a href="#none">Q. [주문&취소] 주문 취소는 어떻게 하나요?</a>
+                        <div>
+                            <p>A. 저희 브랜드 상품의 경우 엄격한 공정을 거친 100% 자체 제작 상품입니다. 단순 변심에 의한 취소, 교환, 반품은 불가합니다.</p>
+                        </div>
+                    </li>
+                    <li><a href="#none">Q. [교환&환불] 제품이 불량인 경우 어떻게 교환/환불할 수 있나요?</a>
+                        <div>
+                            <p>A. 제품이 불량일 경우 홈페이지 오른쪽 하단에 보이는 [문의하기]오픈톡을 통해 문의하시거나, 카카오톡 플러스친구를 통해 불량제품 교환/환불
+                                신청서를<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;양식에 따라
+                                작성해주시기 바랍니다.</p>
+                        </div>
+                    </li>
+                    <li><a href="#none">Q. [배송] 배송 조회는 어떻게 할 수 있나요?</a>
+                        <div>
+                            <p>A. 저희 브랜드 상품의 경우 자체 제작으로 인해 최대 3-4주 정도 배송기간이 소요됩니다. 주문 전 제품별 배송 소요기간 및 주문 후 예상 소요기간을
+                                미리
+                                확인하여
+                                주시길 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;바랍니다. 이외 문의 사항은 오른쪽 하단에 보이는 [문의하기] 오픈톡을 통해 문의하시거나
+                                카카오톡
+                                플러스
+                                친구를
+                                통해 문의하여주시기 바랍니다.</p>
+                        </div>
+                    </li>
+                    <li><a href="#none">Q. [상품 문의] 상품 구매 전, 상품에 대해 궁금한 점이 있으면 어떻게 문의하나요?</a>
+                        <div>
+                            <p>A. 제품에 대한 모든 문의는 오른쪽 하단에 보이는 [문의하기] 오픈톡을 통해 문의하여주시기 바랍니다.</p>
+                        </div>
+                    </li>
+                    <li><a href="#none">Q. [기타] DO:SCENT 와의 제휴/셀러를 등록하고 싶습니다. 어떻게 문의하나요?</a>
+                        <div>
+                            <p>A. 도슨트와 제휴/셀러에 대한 문의는 이메일 hitjdqls@gmail.com 으로 문의하여주시기
+                                바랍니다.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div><!--help_inner-->
+        </div><!--help-->
+
+
+        <div id="way">
+            <div class="way_inner">
+                <ul>
+                    <li>
+                        <h1>#WAY TO DO:SCENT</h1>
+                    </li>
+                    <li class="more_hover"><a href="#">more <img src="./images/more_hover.png" alt="hover">
+                        </a></li>
+                </ul>
+                <ul>
+                    <li class="map"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.9025346230674!2d129.04341487623927!3d35.10914456118741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568e9509d706d6f%3A0x41b985fca25bb211!2z67aA7IKw7Jik7Y6Y65287ZWY7Jqw7Iqk!5e0!3m2!1sko!2skr!4v1703045849393!5m2!1sko!2skr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+                    <li>
+                        <ol class="way_text">
+                            <li><img src="./images/way_map_icon.png" alt="way_map"> <b>주소</b>부산광역시 중구 중앙동4가 15-40</li>
+                            <li><img src="./images/way_call_icon.png" alt="way_call"><b>연락처</b>
+                                <div>
+                                    <p><b>대표번호</b> 010 0000 0000</p>
+                                    <p><b>팩스</b> 000 0000 0000</p>
+                                    <p><b>이메일</b> hitjdqls@gmail.com</p>
+                                </div>
+                            </li>
+                            <li><img src="./images/way_trans_icon.png" alt="way_trans"><b>교통편</b>
+                                <div>
+                                    <p><b>버스</b>서면역,롯데호텔백화점에서 1001, 1004, 67, 23번
+                                    </p>
+                                    <p>버스 탑승 후 부산역에서 하차, 도보24분</p>
+                                    <p><b>지하철</b>서면역에서 1호선 탑승 후 부산역에서 하자,</p>
+                                    <p>부산역 6번 출구에서 도보 24분</p>
+                                </div>
+                            </li>
+                            <li class="map_link"> <a href="https://naver.me/Fepx1P3X" class="btn1">
+                                    <span class="bubble_text">네이버 맵 열기</span>
+                                    <span class="bubble p1"></span>
+                                    <span class="bubble p2"></span>
+                                    <span class="bubble p3"></span>
+                                    <span class="bubble p4"></span>
+                                </a><a href="https://map.kakao.com/" class="btn1">
+                                    <span class="bubble_text">카카오 맵 열기</span>
+                                    <span class="bubble p1"></span>
+                                    <span class="bubble p2"></span>
+                                    <span class="bubble p3"></span>
+                                    <span class="bubble p4"></span>
+                                </a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </div><!--way_inner-->
+        </div><!--#way-->
+
+        <!-- footer -->
+        <div id="footer">
+            <h1><a href="./index.html"><img src="./images/footer_logo.jpg" alt="footer_logo"></a></h1>
+            <p>(주)도슨트</p>
+            <p><b>주소</b>부산광역시 중구 중앙동4가 15-40</p>
+            <ul>
+                <li><b>대표이사</b>문성빈</li>
+                <li><b>대표번호</b>010 0000 0000
+                </li>
+                <li><b>통신판매정보</b>000-00-00001</li>
+            </ul>
+            <p><b>E-MAIL</b> hitjdqls@gmail.com</p>
+            <p>©copyright</p>
+            <ol>
+                <li><select name="language" id="language">
+                        <option value="10">한국어</option>
+                        <option value="20">English</option>
+                    </select>
+                </li>
+                <li><a
+                        href="https://www.notion.so/ko-kr/product?utm_source=google&utm_campaign=10805039169&utm_medium=104440699897&utm_content=455555244437&utm_term=notion&targetid=kwd-312974742&gad_source=1&gclid=Cj0KCQiAkKqsBhC3ARIsAEEjuJhjCHW5SXAFGW02aDu0BtoR8M4C_ZYq_x6-vOpzglySCYcB-INZ9M8aAk-QEALw_wcB"><img
+                            src="./images/footer_notion.png" alt="notion"></a>
+                </li>
+                <li><a href="https://www.instagram.com/"><img src="./images/footer_instagram.png" alt="instagram"></a>
+                </li>
+                <li><a href="https://www.kakaocorp.com/page/"><img src="./images/footer_kakao.png" alt="kakao"></a>
+                </li>
+            </ol>
+
+        </div><!--#footer-->
+
+        <!-- bg noise -->
+        <div class="noise1"></div>
+        <div class="noise2"></div>
+        <div class="noise3"></div>
+        <div class="noise4"></div>
+        <div class="noise5"></div>
+
+    </div><!--body_inner-->
+
+    <!-- 햄버거 메뉴 js -->
+    <script src="./js/hamburger.js"></script>
+    <!-- js 파일연결 -->
+    <script src="./js/sub_notice_script.js"></script>
+
+    <!-- 페이지 슬라이드 -->
+    <script>
+        $(function () {
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 500);//움직이는 시간 조정
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

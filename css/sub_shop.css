@@ -1,0 +1,717 @@
+@charset "utf-8";
+
+
+/* pretendard */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* intel one mono 300 400 500 700 */
+@font-face {
+    font-family: 'intelone-mono-font-family-regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* j송명 , normal  */
+@font-face {
+    font-family: 'JSongMyung-Regular-KO';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #1d1d1b;
+}
+
+/* 레이아웃 기본설정 종료 */
+
+/* top_흘러가는 글씨 */
+.flow_textbox {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slide {
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    width: 2000px;
+    /* 안에 들어가는 내용물 길이에 맞춰서 설정을 바꿔주어야 한다. */
+}
+
+.text_wrapper {
+    display: flex;
+    width: 4000px;
+    /* .slide길이의 2배 */
+    animation: text_animation 35s linear infinite;
+    background-color: #273648;
+
+}
+
+.text_ani2 .text_wrapper {
+    animation: text_animation 10s linear infinite reverse;
+}
+
+@keyframes text_animation {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -2000px;
+        /* slide의 길이만큼 설정 */
+    }
+}
+
+/* gnb  */
+
+/* fixed close, logo */
+.fixed_left {
+    position: fixed;
+    left: 110px;
+    top: 72px;
+    z-index: 100;
+}
+
+.fixed_left a:nth-child(2) {
+    padding-left: 20px;
+}
+
+/* fixed close hover */
+.fixed_left a:nth-child(3) {
+    position: fixed;
+    left: 35px;
+    top: 69px;
+    opacity: 0;
+    transition: all 0.2s;
+
+}
+
+.fixed_left a:nth-child(3):hover {
+    opacity: 1;
+}
+
+
+
+/* fixed bottom */
+.fixed_bottom {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 65px;
+    right: 79px;
+    z-index: 100;
+}
+
+.fixed_bottom a:nth-child(2) {
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+
+.fixed_bottom a:nth-child(3) {
+    position: fixed;
+    bottom: 65px;
+    right: 148px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.fixed_bottom a:nth-child(4) {
+    position: fixed;
+    bottom: 65px;
+    right: 79px;
+    padding-bottom: 7px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+/* fixed_bottom hover  */
+.fixed_bottom a:nth-child(3):hover {
+    opacity: 1;
+    z-index: 20;
+}
+
+.fixed_bottom a:nth-child(4):hover {
+    opacity: 1;
+    z-index: 20;
+}
+
+/* fixed_right */
+.fixed_right {
+    position: fixed;
+    top: 76px;
+    right: 36px;
+    z-index: 100;
+    text-align: center;
+}
+
+.fixed_right li {
+    padding-bottom: 10px;
+
+}
+
+/* gnb_right hover */
+.fixed_right li:nth-child(4) {
+    position: fixed;
+    top: 76px;
+    right: 39px;
+    z-index: 10;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.fixed_right li:nth-child(4):hover {
+    opacity: 1;
+}
+
+.fixed_right li:nth-child(5) {
+    position: fixed;
+    top: 130px;
+    right: 36px;
+    z-index: 10;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.fixed_right li:nth-child(5):hover {
+    opacity: 1;
+}
+
+.fixed_right li:nth-child(6) {
+    position: fixed;
+    top: 184px;
+    right: 36px;
+    z-index: 10;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.fixed_right li:nth-child(6):hover {
+    opacity: 1;
+}
+
+/*햄버거 버튼모양*/
+.slide-open {
+    position: fixed;
+    top: 78px;
+    left: 38px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.burgur {
+    left: 43px;
+    top: 95px;
+    position: fixed;
+    width: 40px;
+    height: 4px;
+    background: #fff;
+}
+
+.burgur .top-line {
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    bottom: 0px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    box-shadow: 0 0 20px 1px #9aaab9;
+}
+
+.burgur .bot-line {
+    width: 4px;
+    height: 40px;
+    background-color: #fff;
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: -18px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    box-shadow: 0 0 20px 1px #9aaab9;
+}
+
+/* hover glow style */
+.burgur .top-line:hover {
+    box-shadow: 0 0 20px 2px #273648;
+}
+
+.burgur .bot-line:hover {
+    box-shadow: 0 0 20px 2px #273648;
+}
+
+.burgur.on {
+    width: 0;
+}
+
+.burgur.on .bot-line {
+    -webkit-transform: translateY(6px) rotate(135deg);
+    transform: translateY(6px) rotate(135deg);
+}
+
+.burgur.on .top-line {
+    -webkit-transform: translateY(6px) rotate(135deg);
+    transform: translateY(6px) rotate(135deg);
+}
+
+/*메뉴부분 모양*/
+.slide_hb {
+    width: 100%;
+    /*이 너비에 따라 보이는 부분이 변화함*/
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    -ms-transition: left 0.3s;
+    -o-transition: left 0.3s;
+    transition: left 0.3s;
+    background-color: #1d1d1b;
+    z-index: 90;
+}
+
+.slide-title {
+    width: 100%;
+    height: 100px;
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.slide_hb.on {
+    left: 0;
+}
+
+.slide_hb {
+    z-index: 90;
+    width: 100%;
+    height: 100%;
+    background-color: #1d1d1b;
+    color: #fff;
+}
+
+/*필요스타일끝*/
+/* hambuger_inner */
+
+.navi_inner {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    font-family: "intel_one_mono";
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 100%;
+}
+
+.navi_tabs {
+    width: 50%;
+    height: 70%;
+    font-size: 60px;
+    color: #1d1d1b;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+}
+
+.navi_container {
+    width: 50%;
+    height: 60%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navi_tabs li {
+    height: 25%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navi_tab {
+    height: 100%;
+}
+
+.navi_tab ul {
+    height: inherit;
+    box-sizing: border-box;
+}
+
+
+#navi1 ul li {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navi2 ul li {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navi3 ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#navi3 ul li {
+    height: 11.11%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    padding: 3px 0;
+}
+
+#navi4 ul li {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* navi inner hover */
+.navi_inner ul li:hover {
+    color: #fff;
+    text-shadow: none;
+    text-shadow: 0 0 30px #9aaab9;
+}
+
+/* mouse pointer */
+.navi_tabs div {
+    cursor: pointer;
+}
+
+
+.navi_tabs li.active div {
+    color: #fff;
+    text-shadow: none;
+    font-size: 75px;
+    transition: all 0.3s;
+    text-shadow: 0 0 30px #273648;
+}
+
+/* 햄버거 inner 종료지점 */
+
+
+
+
+
+
+
+/* tab_bar */
+#tab_bar {
+    width: 100%;
+    height: 36px;
+    margin-top: 146px;
+    transition: top 0.2s ease-in-out;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 80;
+}
+
+#tab_bar ul {
+    display: flex;
+
+}
+
+#tab_bar ul li {
+    width: 16.67%;
+    text-align: center;
+    border: 1px solid #fff;
+    background-color: #273648;
+    padding: 5px 0;
+}
+
+#tab_bar ul li:nth-child(1) {
+    border-left: none;
+}
+
+#tab_bar ul li:nth-child(6) {
+    border-right: none;
+}
+
+#tab_bar.nav-up {
+    top: -36px;
+    /*tab부분 높이와 같이*/
+}
+
+#tab_bar.nav-down {
+    top: 0px;
+}
+
+
+/* product */
+.product {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* product menu */
+.product_menu {
+    width: 380px;
+    height: 480px;
+    padding-left: 20px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+}
+
+
+
+.product_menu .search {
+    background: url(../images/btn_search.png) no-repeat 9px center;
+    border: 1px solid #fff;
+    padding: 10px 0;
+    padding-left: 50px;
+    width: 300px;
+    font-family: 'intelone-mono-font-family-regular';
+    color: #fff;
+}
+
+.product_menu .search::placeholder {
+    color: #fff;
+}
+
+.product_menu h5 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.list_flex ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 340px;
+}
+
+.list_flex li {
+    width: 50%;
+    padding: 2px 0;
+}
+
+/* product_ct */
+.pd_ct {
+    width: 380.5px;
+    height: 480px;
+    border: 1px solid #fff;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.pd_ct_inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.pd_ct .pd_ct_inner ul li:nth-child(1) {
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.pd_ct_img img {
+    display: block;
+    width: 379px;
+    padding-top: 16px;
+}
+
+/* back drop filter, hover */
+.pd_img_inner {
+    position: relative;
+}
+
+.blur a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 379px;
+    height: 379px;
+    margin-top: 16px;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    transition: all 0.2s;
+    text-align: center;
+    box-sizing: border-box;
+    color: #1d1d1b;
+    font-family: 'intel_one_mono';
+}
+
+.blur a span {
+    display: block;
+    width: 280px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px 0;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.pd_img_inner:hover .blur a {
+    opacity: 1;
+}
+
+/* heart, hover */
+.heart_box {
+    position: relative;
+}
+
+.pd_heart_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.heart_box:hover .pd_heart_hover,
+.on {
+    opacity: 1;
+}
+
+/* footer */
+#footer {
+    background-color: #1d1d1b;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid #fff;
+}
+
+#footer h1 img {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#footer p {
+    padding-bottom: 5px;
+}
+
+#footer b {
+    padding-right: 20px;
+}
+
+#footer ul {
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+#footer ul>li {
+    padding-right: 40px;
+}
+
+#footer ol {
+    display: inline-flex;
+    padding-top: 32px;
+    align-items: center;
+}
+
+#footer ol li {
+    padding: 0 20px;
+    padding-bottom: 40px;
+}
+
+#language {
+    border: 1px solid #fff;
+    background-color: #1d1d1b;
+    padding: 5px;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* 호버시 밑줄 생성 */
+.underline a::after {
+    content: "";
+    display: block;
+    /* 가상요소로 집어넣은 부분은 인라인요소이므로, width, height를 주어야 할때는 꼭! 속성을 바꿔주어야한다. */
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.underline a {
+    position: relative;
+}
+
+.underline a:hover::after {
+    width: 100%;
+}
+
+
+/* 페이지 전체 스크롤바 디자인하기*/
+html::-webkit-scrollbar {
+    width: 3px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #fff;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.3);
+}

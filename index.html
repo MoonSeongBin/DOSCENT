@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>D0:SCENT</title>
+    <!-- favicon  -->
+    <!-- intel one mono font -->
+    <link rel="stylesheet" href="./css/font_intel_one_mono.css">
+    <!-- pretendard font -->
+    <link rel="stylesheet" href="./css/font_pretendard.css">
+    <link rel="shortcut icon" href="./images/favicon_2.png" type="image/x-icon">
+    <!-- Link Swiper's CSS, main_banner -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS, new_product  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS, the best -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- aos 애니메이션 효과 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <!-- top_흘러가는 글씨 -->
+    <div class="flow_textbox">
+        <!--화면 밖에 나가는 것은 안보이게 만들 용도-->
+        <div class="text_wrapper">
+            <div class="slide">
+                <a href="#">신규 가입 고객 10% 할인쿠폰 및 무료배송 쿠폰 증정 _</a>
+                <a href="#">5만원 이상 구매시 사은품 증정 및 무료배송 _</a>
+                <a href="#">카카오톡 플러스친구 추가시 추가할인쿠폰 증정 _</a>
+                <a href="#">신규 가입 고객 10% 할인쿠폰 및 무료배송 쿠폰 증정 _</a>
+                <a href="#">5만원 이상 구매시 사은품 증정 및 무료배송 _</a>
+                <a href="#">카카오톡 플러스친구 추가시 추가할인쿠폰 증정 _</a>
+            </div><!--slide-->
+            <div class="slide">
+                <a href="#">신규 가입 고객 10% 할인쿠폰 및 무료배송 쿠폰 증정 _</a>
+                <a href="#">5만원 이상 구매시 사은품 증정 및 무료배송 _</a>
+                <a href="#">카카오톡 플러스친구 추가시 추가할인쿠폰 증정 _</a>
+                <a href="#">신규 가입 고객 10% 할인쿠폰 및 무료배송 쿠폰 증정 _</a>
+                <a href="#">5만원 이상 구매시 사은품 증정 및 무료배송 _</a>
+                <a href="#">카카오톡 플러스친구 추가시 추가할인쿠폰 증정 _</a>
+            </div><!--slide-->
+        </div><!--text_wrapper-->
+    </div><!--flow_textbox-->
+
+    <!--top logo, icon-->
+    <div id="logo">
+        <ul>
+            <li><a href="#"><img src="./images/main_logo.jpg" alt="logo"></a></li>
+            <li><input type="search" placeholder="Search..." class="search"></li>
+        </ul>
+    </div><!--logo-->
+    <div id="gnb">
+        <ul class="gnb_right">
+            <li><a href="#"><img src="./images/btn_join.png" alt="btn_join"></a></li>
+            <li><a href="#"><img src="./images/btn_cart.png" alt="btn_cart"></a></li>
+            <li><a href="#"><img src="./images/btn_heart.png" alt="btn_heart"></a></li>
+            <li><a href="#"><img src="./images/btn_hover_login.png" alt="btn_join"></a></li>
+            <li><a href="#"><img src="./images/btn_hover_cart.png" alt="btn_cart"></a></li>
+            <li><a href="#"><img src="./images/btn_hover_heart.png" alt="btn_heart"></a></li>
+
+        </ul>
+    </div><!--gnb-->
+    <div class="fixed_left">
+        <a href="./index.html"><img src="./images/menu_logo.jpg" alt="logo "></a>
+    </div><!--fixed left-->
+    <div class="fixed">
+        <a href="#">
+            <img src="./images/fixed_answer.png" alt="fixed"></a>
+        <a href="#"><img src="./images/fixed_arrow.png" alt="fixed"></a>
+        <!-- hover -->
+        <a href="#">
+            <img src="./images/fixed_hover_answer.png" alt="fixed_hover"></a>
+        <a href="#main_banner"><img src="./images/fixed_hover_arrow.png" alt="fixed_hover"></a>
+    </div><!--fixed-->
+
+    <!-- 햄버거 버튼 -->
+    <!--여기부터 필요구조 시작-->
+    <div class="hb">
+        <div class="slide-open" id="slide-open">
+            <span class="burgur" id="burgur">
+                <span class="top-line"></span>
+                <span class="bot-line"></span>
+            </span>
+        </div><!--slide-open-->
+        <div class="slide_hb" id="slide_hb">
+
+            <div class="navi_inner">
+
+                <!--탭 콘텐츠 영역(tabs를 눌렀을때 변화할 내용들이 들어있는 곳) 모든 tab내용은, 각각 다른아이디를 갖고 있어야 하고, 같은 tab-content라는 클래스를 가지고 있어야 합니다.-->
+
+
+                <ul class="navi_tabs">
+                    <li>
+                        <div zzz="#navi1">ABOUT US</div>
+                    </li>
+                    <li>
+                        <div zzz="#navi2">ARTIST</div>
+                    </li>
+                    <li>
+                        <div zzz="#navi3">SHOP</div>
+                    </li>
+                    <li>
+                        <div zzz="#navi4">NOTICE</div>
+                    </li>
+
+                </ul>
+                <div class="navi_container" data-aos="zoom-in-right">
+
+                    <div id="navi1" class="navi_tab">
+                        <!--Content-->
+                        <ul>
+                            <li>
+                                <div><a href="./sub_about_us.html">VALUE</a></div>
+                            <li>
+                                <div><a href="./sub_identity.html">IDENTITY</a></div>
+                        </ul>
+                    </div>
+
+                    <div id="navi2" class="navi_tab">
+                        <ul>
+                            <li>
+                                <div><a href="./sub_artist.html">ARCHIVE SHILHUM</a></div>
+                            <li>
+                                <div><a href="./sub_artist.html">BEAK JI HYE</a></div>
+                            <li>
+                                <div><a href="./sub_artist.html">BECKY</a></div>
+                            <li>
+                                <div><a href="./sub_artist.html">SONG H.</a></div>
+                            <li>
+                                <div><a href="./sub_artist.html">YOONSEUL</a></div>
+
+                        </ul>
+                    </div>
+                    <div id="navi3" class="navi_tab">
+                        <ul>
+                            <li>
+                                <div><a href="./sub_shop.html">ALL</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">ACC</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">CLOTHES</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">DRAWING</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">GOODS</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">LIGHTING</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">MUSIC</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">OBJECTS</a></div>
+                            <li>
+                                <div><a href="./sub_shop.html">ETCS</a></div>
+                        </ul>
+                    </div>
+                    <div id="navi4" class="navi_tab">
+                        <ul>
+                            <li>
+                                <div><a href="./sub_notice.html">NOTICE</a></div>
+                            <li>
+                                <div><a href="./sub_notice.html">EVENT</a></div>
+                            <li>
+                                <div><a href="./sub_notice.html">CONTACT US</a></div>
+                            <li>
+                                <div><a href="./sub_notice.html">HELP</a></div>
+                            <li>
+                                <div><a href="./sub_notice.html">WAY TO COME</a></div>
+                        </ul>
+                    </div>
+
+                </div><!--navi container-->
+            </div><!--navi_inner-->
+        </div><!--slide-->
+    </div>
+    <!--필요구조 끝-->
+    <!--main_banner-->
+    <!-- Swiper -->
+    <div id="main_banner" class="swiper main_banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide bg1"><a href="#"></a></div>
+            <div class="swiper-slide bg2"><a href="#"></a></div>
+            <div class="swiper-slide bg3"><a href="#"></a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <div id="coupon">
+        <div class="coupon_inner">
+            <ul>
+                <li data-aos="zoom-in-up"><a href="./sub_notice.html#ct">
+                        <div class="color_box"><img src="./images/cp_icon_1.png" alt="icon1"></div>
+
+                        <p>신규가입<br>할인쿠폰</p>
+                    </a>
+                </li>
+                <li data-aos="zoom-in-up"><a href="#">
+                        <div class="color_box"><img src="./images/cp_icon_2.png" alt="icon2"> </div>
+                        <p>오늘의<br>선착순특가</p>
+
+                    </a>
+                </li>
+                <li data-aos="zoom-in-up"><a href="./sub_artist.html">
+                        <div class="color_box"><img src="./images/cp_icon_3.png" alt="icon3"> </div>
+                        <p>작가 소개</p>
+
+                    </a>
+                </li>
+                <li data-aos="zoom-in-up"><a href="./sub_shop.html">
+                        <div class="color_box"><img src="./images/cp_icon_4.png" alt="icon4"> </div>
+                        <p>실시간 랭킹</p>
+
+                    </a>
+                </li>
+                <li data-aos="zoom-in-up"><a href="./sub_notice.html#ct">
+                        <div class="color_box"><img src="./images/cp_icon_5.png" alt="icon5"> </div>
+                        <p>이벤트</p>
+
+                    </a>
+                </li>
+                <li data-aos="zoom-in-up"><a href="./sub_notice.html">
+                        <div class="color_box"><img src="./images/cp_icon_6.png" alt="icon6"> </div>
+                        <p>공지사항</p>
+
+                    </a>
+                </li>
+            </ul>
+        </div><!--coupon_inner-->
+    </div><!--coupon-->
+    <div id="the_new_artist">
+        <div class="artist_inner_bg">
+            <div class="artist_inner">
+                <div class="artist_inner_left">
+                    <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                        data-aos-duration="1000"># THE NEW ARTIST</h2>
+                    <h1 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                        data-aos-duration="1000">ARCHIVE_SHILHUM</h1>
+                    <P data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                        data-aos-duration="1000">트렌드에 맞는 디자인을 하는 것은 충분히 가치있고 멋진<br>
+                        과정이지만, 우리의 내면에서 꺼내어온 과거의 이미지는 우리가<br>
+                        살아있는 한 고갈되지 않는 새로운 매력으로 작용하고 차별성과 귀결됩니다.
+                        <br>
+                    </P>
+                    <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                        data-aos-duration="1000"> 우리의 지극히 주관적인 과거의 이미지를 해체와 편집을 통해 <br>
+                        디자인의 언어로 재구성하는 것에 의의를 두고자 합니다. </P>
+                    <p class="more_hover" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                        data-aos-duration="1000"><a href="./sub_artist.html">more<img src="./images/more_hover.png"
+                                alt="more"> </a></p>
+                    <ul class="artist_sub_img">
+                        <li data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1000"><a
+                                href="./sub_shop.html"><img src="./images/the_new_artist_sub_1.jpg" alt="sub1">
+                                <h5 class="artist_blur"><a href="./sub_shop.html"><span>NO.08<br>STAND LAMP</span></a>
+                                </h5>
+                            </a></li>
+                        <li data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="50"
+                            data-aos-duration="1000"><a href="./sub_shop.html"><img
+                                    src="./images/the_new_artist_sub_2.jpg" alt="sub2">
+                                <h5 class="artist_blur"><a href="./sub_shop.html"><span>NO.12<br>CLOTHES</span></a>
+                                </h5>
+                            </a></li>
+                        <li data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="150"
+                            data-aos-duration="1000"><a href="./sub_shop.html"><img
+                                    src="./images/the_new_artist_sub_3.jpg" alt="sub3">
+                                <h5 class="artist_blur"><a href="./sub_shop.html"><span>NO.00<br>SOON..</span></a>
+                                </h5>
+                            </a></li>
+                    </ul><!--artist_sub_img-->
+                </div><!--artist_inner_left-->
+                <div class="artist_inner_right" data-aos="fade-left" data-aos-offset="50" data-aos-easing="ease-in-sine"
+                    data-aos-duration="1000">
+                    <a href="./sub_artist.html"><img src="./images/the_new_artist_main_1.png" alt="main1"></a>
+                </div><!--artist_inner_right-->
+
+            </div><!--artist_inner -->
+        </div><!--artist_inner_bg-->
+    </div><!--#the_new_artist-->
+    <div id="text_box">
+        <ul>
+            <li data-aos="flip-left"><a href="./sub_shop.html">*clothes.</a></li>
+            <li data-aos="flip-right"><a href="./sub_shop.html">*GooDs.</a></li>
+        </ul>
+        <ul>
+            <li data-aos="flip-left"><a href="./sub_shop.html">*oBjec<em>t</em>.</a></li>
+            <li data-aos="flip-right"><a href="./sub_shop.html">*Lighting.</a></li>
+            <li data-aos="flip-right"><a href="./sub_shop.html">*ACC.</a></li>
+        </ul>
+        <ul>
+            <li data-aos="flip-left"><a href="./sub_shop.html">*mus<i>i</i>C.</a></li>
+            <li data-aos="flip-left"><a href="./sub_shop.html">*etc.</a></li>
+            <li data-aos="flip-right"><a href="./sub_shop.html">*<em>drawing.</em></a></li>
+        </ul>
+        <ul>
+            <li data-aos="flip-right"><a href="#">(*Add VaLUe to LifE)&amp;</a></li>
+        </ul>
+        <ul>
+            <li class="more_hover"><a href="./sub_notice.html">오프라인매장 찾아오는 길 <img src="./images/more_hover.png"
+                        alt="more"></a></li>
+        </ul>
+    </div><!--#text_box-->
+    <!-- new_product -->
+    <!-- Swiper -->
+    <div class="swiper new_product">
+        <div class="swiper-wrapper">
+            <!-- pd1 -->
+            <div class="swiper-slide pd1">
+                <div class="product_inner">
+                    <h2 data-aos="zoom-in-up"># NEW PRODUCT OF THE MONTH</h2>
+                    <div class="display_flex">
+                        <div class="product_inner_left" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <h1>BAEK JI HYE</h1>
+                            <p>공간너머의 색과 면을 투영하여<br>새로운 구조물로 결합시킨 완성물로서</p>
+                            <p class="enter">쓸쓸한 겨울을 견디고 다시 따스하게 피어날 봄을 준비하는<br>꽃눈을 연상하며 자연물의 거칠면서도 유려한 곡선을<br>조형물에
+                                담아내고자 하였습니다.</p>
+                            <p class="more_hover"><a href="./sub_shop.html">more<img src="./images/more_hover.png"
+                                        alt=""></a></p>
+                        </div><!--product_inner_left-->
+                        <div class="product_inner_right" data-aos="zoom-in-left" data-aos-duration="1000">
+                            <a href="./sub_shop.html"><img src="./images/new_product_main_1.jpg" alt="main1"></a>
+                        </div><!--product_inner_right-->
+                    </div><!--display_flex-->
+                </div><!--product_inner-->
+            </div>
+            <!-- pd2 -->
+            <div class="swiper-slide pd2">
+                <div class="product_inner">
+                    <h2 data-aos="zoom-in-up"># NEW PRODUCT OF THE MONTH</h2>
+                    <div class="display_flex">
+                        <div class="product_inner_left" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <h1>SONG H.</h1>
+                            <p>자연물을 주제로 삼아 다양한 작업을 하고 있습니다.<br>
+                                같은 푸른 색에서도 저 마다의 다른 온도로 색감을 표현하고자 하였으며
+                            </p>
+                            <p class="enter">오랜 기간이 지나더라도 본연의 색채와 아름다운을<br>
+                                잃지 않고 그 자체로서의 가치가 더해질 수 있도록<br>
+                                부드럽고 빈티지한 색감을 담아내고자 하였습니다.</p>
+                            <p class="more_hover"><a href="./sub_shop.html">more<img src="./images/more_hover.png"
+                                        alt=""></a></p>
+                        </div><!--product_inner_left-->
+                        <div class="product_inner_right" data-aos="zoom-in-left" data-aos-duration="1000">
+                            <a href="./sub_shop.html"><img src="./images/new_product_main_2.jpg" alt="main2"></a>
+                        </div><!--product_inner_right-->
+                    </div><!--display_flex-->
+                </div><!--product_inner-->
+            </div>
+            <!-- pd3 -->
+            <div class="swiper-slide pd3">
+                <div class="product_inner">
+                    <h2 data-aos="zoom-in-up"># NEW PRODUCT OF THE MONTH</h2>
+                    <div class="display_flex">
+                        <div class="product_inner_left" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <h1>YOONSEUL</h1>
+                            <p>색과 선, 구조물의 경계 사이에서 드러나는,<br>
+                                피사체와 빛의 조화를 좋아합니다. </p>
+                            <p class="enter">전세계를 돌아다니며<br>
+                                제가 기억하고 싶은 따듯한 순간들을 기록합니다.<br>
+                                자유분방한 느낌보다는 일정한 구조가 반복되는 패턴을 그려내어<br>
+                                사진이 주는 안정감을 표현하고자 하였습니다.</p>
+                            <p class="more_hover"><a href="./sub_shop.html">more<img src="./images/more_hover.png"
+                                        alt=""></a></p>
+                        </div><!--product_inner_left-->
+                        <div class="product_inner_right" data-aos="zoom-in-left" data-aos-duration="1000">
+                            <a href="./sub_shop.html"><img src="./images/new_product_main_3.jpg" alt="main2"></a>
+                        </div><!--product_inner_right-->
+                    </div><!--display_flex-->
+                </div><!--product_inner-->
+            </div>
+
+        </div>
+    </div><!--swiper new product-->
+    <!-- the best -->
+    <!-- Swiper -->
+    <div id="the_best_ct">
+        <div class="swiper the_best">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide no1"><a href="#"><img src="./images/the_best_no_1.png" alt="no1"></a></div>
+                <div class="swiper-slide no1"><a href="#"><img src="./images/the_best_no_2.png" alt="the_best_no_2"></a>
+                </div>
+                <div class="swiper-slide no1"><a href="#"><img src="./images/the_best_no_3.png" alt="no3"></a></div>
+                <div class="swiper-slide no1"><a href="#"><img src="./images/the_best_no_4.png" alt="no4"></a></div>
+                <div class="swiper-slide no1"><a href="#"><img src="./images/the_best_no_5.png" alt="no5"></a></div>
+                <div class="swiper-slide no1"><a href="#"><img src="./images/the_best_no_6.png" alt="no6"></a></div>
+                <div class="swiper-slide no1"><a href="#"><img src="./images/the_best_no_7.png" alt="no7"></a></div>
+                <div class="swiper-slide no1"><a href="#"><img src="./images/the_best_no_8.png" alt="no8"></a></div>
+                <div class="swiper-slide no1"><a href="#"><img src="./images/the_best_no_9.png" alt="no9"></a></div>
+                <div class="swiper-slide no1"><a href="#"><img src="./images/the_best_no_10.png" alt="no10"></a></div>
+
+            </div><!--swiper_wrapper-->
+            <div class="swiper-pagination"></div>
+        </div><!--the_best_swiper-->
+        <h2 data-aos="fade-right">#THE BEST</h2>
+        <p class="the_best_more more_hover"><a href="./sub_shop.html">more <img src="./images/more_hover.png"
+                    alt="more"></a></p>
+    </div><!--#the_best_ct-->
+    <!-- about_us -->
+    <div id="about_us">
+        <div class="about_us_inner">
+            <h2 data-aos="fade-down-right" data-aos-duration="1000"># ABOUT US</h2>
+            <h1 data-aos="fade-down-right" data-aos-duration="1000">OUR <br>BRAND STORY</h1>
+            <ul>
+                <li class="about_us_left" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                    data-aos-duration="1000"><img src="./images/about_us_main.jpg" alt="main"></li>
+                <li class="about_us_right" data-aos="fade-left" data-aos-offset="50" data-aos-easing="ease-in-sine"
+                    data-aos-duration="1000">DO:SCENT는 오브제, 가구, 패션, 디자인, 음악 등 장르에 경계가 없는,<br> 다양한 장르의 예술작품을 소개 및 판매하고 있는
+                    편집숍이자<br>부산을 거점으로 신진작가를 발굴하고 소개하며,<br> 다양한 활동을 적극적으로 서포트하는 에이전시입니다.
+                    <ol class="about_us_sns" data-aos="fade-left" data-aos-offset="50" data-aos-easing="ease-in-sine"
+                        data-aos-duration="1000">
+                        <li class="more_hover"><a href="./sub_about_us.html">more<img src="./images/more_hover.png"
+                                    alt="more"></a></li>
+                        <li class="more_hover"><a href="https://www.instagram.com/">INSTAGRAM &nbsp;<img
+                                    src="./images/more_hover_2.png" alt="more"></a>
+                        </li>
+                        <li class="more_hover"><a
+                                href="https://www.notion.so/ko-kr/product?utm_source=google&utm_campaign=10805039169&utm_medium=104440699897&utm_content=455555244437&utm_term=notion&targetid=kwd-312974742&gad_source=1&gclid=Cj0KCQiAkKqsBhC3ARIsAEEjuJhjCHW5SXAFGW02aDu0BtoR8M4C_ZYq_x6-vOpzglySCYcB-INZ9M8aAk-QEALw_wcB">NOTION
+                                &nbsp;<img src="./images/more_hover_2.png" alt="more"></a>
+                        </li>
+                        <li class="more_hover"><a href="https://www.kakaocorp.com/page/">KAKAO &nbsp;<img
+                                    src="./images/more_hover_2.png" alt="more"></a>
+                        </li>
+                        <li class="more_hover"><a href="./sub_notice.html#ct">CONTACT US &nbsp;<img
+                                    src="./images/more_hover_2.png" alt="more"></a>
+                        </li>
+                    </ol>
+                </li><!--about_us_right-->
+            </ul>
+        </div><!--about_us_inner-->
+    </div><!--#about_us-->
+    <!-- footer -->
+    <div id="footer">
+        <h1><a href="./index.html"><img src="./images/footer_logo.jpg" alt="footer_logo"></a></h1>
+        <p>(주)도슨트</p>
+        <p><b>주소</b>부산광역시 중구 중앙동4가 15-40</p>
+        <ul>
+            <li><b>대표이사</b>문성빈</li>
+            <li><b>대표번호</b>010 0000 0000
+            </li>
+            <li><b>통신판매정보</b>000-00-00001</li>
+        </ul>
+        <p><b>E-MAIL</b> hitjdqls@gmail.com</p>
+        <p>©copyright</p>
+        <ol>
+            <li><select name="language" id="language">
+                    <option value="10">한국어</option>
+                    <option value="20">English</option>
+                </select>
+            </li>
+            <li><a
+                    href="https://www.notion.so/ko-kr/product?utm_source=google&utm_campaign=10805039169&utm_medium=104440699897&utm_content=455555244437&utm_term=notion&targetid=kwd-312974742&gad_source=1&gclid=Cj0KCQiAkKqsBhC3ARIsAEEjuJhjCHW5SXAFGW02aDu0BtoR8M4C_ZYq_x6-vOpzglySCYcB-INZ9M8aAk-QEALw_wcB"><img
+                        src="./images/footer_notion.png" alt="notion"></a>
+            </li>
+            <li><a href="https://www.instagram.com/"><img src="./images/footer_instagram.png" alt="instagram"></a>
+            </li>
+            <li><a href="https://www.kakaocorp.com/page/"><img src="./images/footer_kakao.png" alt="kakao"></a>
+            </li>
+        </ol>
+
+    </div><!--#footer-->
+
+
+
+    <!-- aos -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- jQuery library -->
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <!-- 햄버거 메뉴 js -->
+    <script src="./js/hamburger.js"></script>
+    <!--js link-->
+    <script src="./js/script.js"></script>
+    <!-- aos -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- 페이지 arrow library -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- 페이지 arrow 슬라이드 -->
+    <script>
+        $(function () {
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 500);//움직이는 시간 조정
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
