@@ -3,7 +3,8 @@
 /* pretendard */
 @font-face {
   font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -13,7 +14,8 @@
 /* intel one mono 300 400 500 700 */
 @font-face {
   font-family: "intelone-mono-font-family-regular";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2")
+    format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -23,7 +25,8 @@
 /* j송명 , normal  */
 @font-face {
   font-family: "JSongMyung-Regular-KO";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -375,7 +378,6 @@ body {
   font-weight: 700;
   font-size: 50px;
   line-height: 100%;
-
 }
 
 .navi_tabs {
@@ -413,7 +415,6 @@ body {
   height: inherit;
   box-sizing: border-box;
 }
-
 
 #navi1 ul li {
   height: 50%;
@@ -463,7 +464,6 @@ body {
   cursor: pointer;
 }
 
-
 .navi_tabs li.active div {
   color: #fff;
   text-shadow: none;
@@ -473,7 +473,6 @@ body {
 }
 
 /* 햄버거 inner 종료지점 */
-
 
 /* coupon */
 
@@ -488,6 +487,7 @@ body {
   margin: 0 auto;
   margin-top: 48px;
   margin-bottom: 48px;
+  overflow: hidden;
 }
 
 .color_box {
@@ -562,17 +562,18 @@ body {
   justify-content: space-between;
   padding-top: 40px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .artist_inner_left {
   width: 560px;
 }
 
-.artist_inner_left>ul {
+.artist_inner_left > ul {
   display: flex;
 }
 
-.artist_inner_left>ul>li {
+.artist_inner_left > ul > li {
   padding-right: 40px;
 }
 
@@ -649,7 +650,7 @@ body {
   align-items: center;
   font-weight: 600;
   font-size: 16px;
-  font-family: 'intel_one_mono';
+  font-family: "intel_one_mono";
   opacity: 0;
   transition: all 0.3s;
 }
@@ -662,10 +663,9 @@ body {
   color: #1d1d1b;
 }
 
-.artist_sub_img>li:hover .artist_blur a {
+.artist_sub_img > li:hover .artist_blur a {
   opacity: 1;
 }
-
 
 .artist_inner_right {
   width: 470px;
@@ -884,6 +884,7 @@ body {
   width: 1320px;
   margin: 0 auto;
   padding-top: 135px;
+  overflow: hidden;
 }
 
 .about_us_inner h2 {
@@ -908,15 +909,15 @@ body {
   z-index: 60;
 }
 
-.about_us_inner>ul {
+.about_us_inner > ul {
   display: flex;
 }
 
-.about_us_inner>ul {
+.about_us_inner > ul {
   padding-top: 140px;
 }
 
-.about_us_inner>ul>.about_us_right {
+.about_us_inner > ul > .about_us_right {
   border: 1px solid #fff;
   width: 620px;
   height: 450px;
@@ -927,12 +928,12 @@ body {
   line-height: 30px;
 }
 
-.about_us_inner>ul>.about_us_right>ol {
+.about_us_inner > ul > .about_us_right > ol {
   padding-top: 20px;
   line-height: 35px;
 }
 
-.about_us_inner>ul>.about_us_right>ol>li:nth-child(1) {
+.about_us_inner > ul > .about_us_right > ol > li:nth-child(1) {
   line-height: 24px;
   padding-bottom: 50px;
 }
@@ -966,7 +967,7 @@ body {
   padding-bottom: 5px;
 }
 
-#footer ul>li {
+#footer ul > li {
   padding-right: 40px;
 }
 
