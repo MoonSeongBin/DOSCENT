@@ -402,9 +402,21 @@ body {
 }
 
 /* video */
+#mb_video {
+  position: relative;
+}
 
 #mb_video video {
   width: 100%;
+}
+
+/* btn_down_slider video img */
+.down_slider {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
 }
 
 /* ct1 */
@@ -764,13 +776,4 @@ html::-webkit-scrollbar-track {
   100% {
     transform: translate(0);
   }
-}
-
-/* btn_down_slider video img */
-.down_slider {
-  position: absolute;
-  top: 870px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 20;
 }

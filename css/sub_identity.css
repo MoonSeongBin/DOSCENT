@@ -3,7 +3,8 @@
 /* pretendard */
 @font-face {
   font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -13,7 +14,8 @@
 /* intel one mono 300 400 500 700 */
 @font-face {
   font-family: "intelone-mono-font-family-regular";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2")
+    format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -23,7 +25,8 @@
 /* j송명 , normal  */
 @font-face {
   font-family: "JSongMyung-Regular-KO";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -293,7 +296,6 @@ body {
   font-weight: 700;
   font-size: 50px;
   line-height: 100%;
-
 }
 
 .navi_tabs {
@@ -331,7 +333,6 @@ body {
   height: inherit;
   box-sizing: border-box;
 }
-
 
 #navi1 ul li {
   height: 50%;
@@ -381,7 +382,6 @@ body {
   cursor: pointer;
 }
 
-
 .navi_tabs li.active div {
   color: #fff;
   text-shadow: none;
@@ -398,10 +398,22 @@ body {
 }
 
 /* video */
+#mb_video {
+  position: relative;
+}
 
 #mb_video video {
   width: 100%;
- }
+}
+
+/* btn_down_slider video img */
+.down_slider {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
 
 /* brand_essence */
 #brand_essence {
@@ -534,7 +546,7 @@ body {
   padding-top: 10px;
   display: flex;
   align-items: center;
-  }
+}
 
 .design_text2 {
   padding-bottom: 100px;
@@ -542,25 +554,6 @@ body {
   align-items: center;
 }
 
-.design_icon{
-  position: absolute;
-  top: 3222px;
-  left: 1000px;
-}
-
-.design_icon img{
-  width: 30px;
-  animation: design_rotation 3s linear infinite;
-}
-
-@keyframes design_rotation{
-  from{transform: rotate(0);
-
-  }
-  to{
-    transform: rotate(360deg);
-  }
-}
 /* logo */
 #logo {
   width: 1320px;
@@ -693,7 +686,6 @@ body {
   text-align: center;
 }
 
-
 .plus_inner {
   width: 1200px;
   padding-bottom: 250px;
@@ -745,11 +737,9 @@ body {
   }
 }
 
-
 .about_logo {
   animation: about_logo_ani 3s linear infinite;
 }
-
 
 /* footer */
 #footer {
@@ -780,7 +770,7 @@ body {
   padding-bottom: 5px;
 }
 
-#footer ul>li {
+#footer ul > li {
   padding-right: 40px;
 }
 
@@ -801,15 +791,6 @@ body {
   padding: 5px;
   color: #fff;
   font-weight: 700;
-}
-
-/* btn_down_slider video img */
-.down_slider {
-  position: absolute;
-  top: 870px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 20;
 }
 
 /* 페이지 전체 스크롤바 디자인하기*/
@@ -835,7 +816,11 @@ html::-webkit-scrollbar-track {
   height: 800px;
   border-radius: 50%;
   background: rgb(255, 255, 255);
-  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 60%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
   opacity: 0.3;
   animation: move1 30s linear infinite;
   overflow: hidden;
@@ -850,7 +835,11 @@ html::-webkit-scrollbar-track {
   height: 800px;
   border-radius: 50%;
   background: rgb(255, 255, 255);
-  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 60%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
   opacity: 0.2;
   animation: move1 30s linear infinite;
   overflow: hidden;
@@ -865,7 +854,11 @@ html::-webkit-scrollbar-track {
   height: 800px;
   border-radius: 50%;
   background: rgb(255, 255, 255);
-  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 60%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
   opacity: 0.2;
   animation: move1 30s linear infinite;
   overflow: hidden;
@@ -880,7 +873,11 @@ html::-webkit-scrollbar-track {
   height: 800px;
   border-radius: 50%;
   background: rgb(255, 255, 255);
-  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 60%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
   opacity: 0.2;
   animation: move1 30s linear infinite;
   overflow: hidden;
@@ -895,7 +892,11 @@ html::-webkit-scrollbar-track {
   height: 800px;
   border-radius: 50%;
   background: rgb(255, 255, 255);
-  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 60%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
   opacity: 0.2;
   animation: move1 30s linear infinite;
   overflow: hidden;
@@ -910,12 +911,15 @@ html::-webkit-scrollbar-track {
   height: 800px;
   border-radius: 50%;
   background: rgb(255, 255, 255);
-  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 60%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
   opacity: 0.2;
   animation: move1 30s linear infinite;
   overflow: hidden;
 }
-
 
 @keyframes move1 {
   0% {
@@ -929,14 +933,4 @@ html::-webkit-scrollbar-track {
   100% {
     transform: translate(0);
   }
-}
-
-
-/* btn_down_slider video img */
-.down_slider {
-  position: absolute;
-  top: 870px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 20;
 }
